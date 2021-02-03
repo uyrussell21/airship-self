@@ -19,14 +19,14 @@
 - when you have your own branch, every accomplishment, kunyari natapus niyo header, commit and push agad
 
 ### Referrences
-Final Design: [https://zpl.io/25QOK0Q](https://zpl.io/25QOK0Q)
-[https://docs.emmet.io/cheat-sheet/](https://docs.emmet.io/cheat-sheet/)
-[https://www.tutorialspoint.com/javascript/index.htm](https://www.tutorialspoint.com/javascript/index.htm)
-[https://dev.to/javinpaul/the-2019-web-development-frontend-backend-roadmap-4le2](https://dev.to/javinpaul/the-2019-web-development-frontend-backend-roadmap-4le2)
-[https://github.com/vercel/next.js/tree/canary/examples](https://github.com/vercel/next.js/tree/canary/examples)
-[https://git-scm.com/doc](https://git-scm.com/doc)
-[https://www.internetingishard.com/html-and-css/semantic-html/](https://www.internetingishard.com/html-and-css/semantic-html/)
-[https://nextjs.org/](https://nextjs.org/)
+- Final Design: [https://zpl.io/25QOK0Q](https://zpl.io/25QOK0Q)
+- [https://docs.emmet.io/cheat-sheet/](https://docs.emmet.io/cheat-sheet/)
+- [https://www.tutorialspoint.com/javascript/index.htm](https://www.tutorialspoint.com/javascript/index.htm)
+- [https://dev.to/javinpaul/the-2019-web-development-frontend-backend-roadmap-4le2](https://dev.to/javinpaul/the-2019-web-development-frontend-backend-roadmap-4le2)
+- [https://github.com/vercel/next.js/tree/canary/examples](https://github.com/vercel/next.js/tree/canary/examples)
+- [https://git-scm.com/doc](https://git-scm.com/doc)
+- [https://www.internetingishard.com/html-and-css/semantic-html/](https://www.internetingishard.com/html-and-css/semantic-html/)
+- [https://nextjs.org/](https://nextjs.org/)
 
 ### Minimum Breakpoints
 ```
