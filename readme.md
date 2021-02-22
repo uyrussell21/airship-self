@@ -93,13 +93,13 @@ open you localhost:3000 or localhost:8000 depends on your package.json scripts
 ## Naming Conventions
 
 - Folder and File Naming - Pascal Case
-- Folders and files with names should be lowercase:
+- src Folders and files with names should be lowercase:
 
 1. components
 2. index.js
 3. styles.module.scss
 
-- CSS samples:
+- Styled components CSS samples:
 
 1. hello-world - className={styles["hello-world"]}
 2. hello - className={styles.hello}
@@ -116,14 +116,14 @@ Notes:
 
 - You will only branch out to dev
 - Always commit small
-- Limit your code Line of 100 max 150
-- Use Ant Design Components as much as possible
+- Limit your code Line of 100 max 150 per file
+- Use Bootstrap Components as much as possible
 
 ## Folder Use
 
 1. pages - where the routes will be created
 2. api - where the axios and services
 3. components - reusable
-4. containers - page components
+4. pages - page components
 5. styles/theme - global styles
 6. public - where the assests will be found
