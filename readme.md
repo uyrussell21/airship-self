@@ -49,3 +49,81 @@ $grid-breakpoints: (
 # Next.js
 
 - This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+
+## Installation
+
+```
+# clone the repo
+$ git clone https://gitlab.com/botbrosai/airship/airship-web.git
+
+# go into app directory
+$ cd airship-web
+
+# install app dependencies
+$ npm install or yarn install
+
+# run the app
+$ npm run dev or yarn dev
+
+open you localhost:3000 or localhost:8000 depends on your package.json scripts
+```
+
+## Design System
+
+- Bootstrap 4x or Latest
+
+## File Structure
+
+```
+- src
+  - components
+    - Modals
+    - Header
+    - Footer
+  - containers
+    - Homepage
+      - components
+        - HomepageHeader.jsx
+        - HomepageTitle.jsx
+      - index.jsx
+      - style.scss
+    - Signup
+```
+
+## Naming Conventions
+
+- Folder and File Naming - Pascal Case
+- Folders and files with names should be lowercase:
+
+1. components
+2. index.js
+3. styles.module.scss
+
+- CSS samples:
+
+1. hello-world - className={styles["hello-world"]}
+2. hello - className={styles.hello}
+
+## Development Workflow & Notes
+
+- Branch Naming: All small letters
+
+1. feature/landing-page
+2. bugfix/landing-page
+3. hotfix/landing-page
+
+Notes:
+
+- You will only branch out to dev
+- Always commit small
+- Limit your code Line of 100 max 150
+- Use Ant Design Components as much as possible
+
+## Folder Use
+
+1. pages - where the routes will be created
+2. api - where the axios and services
+3. components - reusable
+4. containers - page components
+5. styles/theme - global styles
+6. public - where the assests will be found
