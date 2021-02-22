@@ -106,7 +106,7 @@ open you localhost:3000 or localhost:8000 depends on your package.json scripts
 
 ## Development Workflow & Notes
 
-- Branch Naming: All small letters
+#### Branch Naming: All small letters
 
 1. feature/landing-page
 2. bugfix/landing-page
@@ -118,6 +118,22 @@ Notes:
 - Always commit small
 - Limit your code Line of 100 max 150 per file
 - Use Bootstrap Components as much as possible
+
+##### Merge Request Template
+
+- Title: DONE: [TICKET] - Title Description
+- Body:
+
+```
+## Summary
+- Short description of what you did
+
+## Test
+1. Step by step procedure how we can test your MR
+
+## Notes to Testers
+- Additional notes if there's any
+```
 
 ## Folder Use
 
