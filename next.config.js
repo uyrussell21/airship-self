@@ -5,5 +5,8 @@ module.exports = {
     config.resolve.modules.push(path.resolve("./"));
 
     return config;
+  },
+  sassOptions: {
+    includePaths: [path.join(__dirname, "styles")]
   }
 };

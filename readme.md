@@ -57,7 +57,7 @@ $grid-breakpoints: (
 $ git clone https://gitlab.com/botbrosai/airship/airship-web.git
 
 # go into app directory
-$ cd airship-web
+$ cd `airship-web` branch: [master]
 
 # install app dependencies
 $ npm install or yarn install
