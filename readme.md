@@ -1,7 +1,9 @@
 # Important points
+
 ### Quick Rules
 
-*some points*
+_some points_
+
 - pure HTML + SCSS yung gagamitin niyo, no react muna
 - you'll setup your own project, but shared repo with your own branch
 - i'll give the home page design lang
@@ -11,14 +13,17 @@
 - code review session with Da and Neil (Venneth pwede ka sumama) after everyone has submitted
 - breakpoints ng media query will be based on bootstrap's
 
-*what I'll provide:*
+_what I'll provide:_
+
 - design for home page
 - gitlab repo
 
-*git best practice:*
+_git best practice:_
+
 - when you have your own branch, every accomplishment, kunyari natapus niyo header, commit and push agad
 
 ### Referrences
+
 - Final Design: [https://zpl.io/25QOK0Q](https://zpl.io/25QOK0Q)
 - [https://docs.emmet.io/cheat-sheet/](https://docs.emmet.io/cheat-sheet/)
 - [https://www.tutorialspoint.com/javascript/index.htm](https://www.tutorialspoint.com/javascript/index.htm)
@@ -29,6 +34,7 @@
 - [https://nextjs.org/](https://nextjs.org/)
 
 ### Minimum Breakpoints
+
 ```
 $grid-breakpoints: (
   xs: 0,
@@ -40,3 +46,6 @@ $grid-breakpoints: (
 );
 ```
 
+# Next.js
+
+- This is a starter template for [Learn Next.js](https://nextjs.org/learn).
