@@ -12,7 +12,7 @@ const NavDropdown = ({ title, href, subNavs }) => (
           <li key={subHref}>
             <Link href={`${href}/${subHref}`}>
               <a>
-                <img src={`overview/${subHref}.png`} alt={subTitle}/>
+                <img src={`/overview/${subHref}.png`} alt={subTitle}/>
                 <p>{subTitle}</p>
                 <p>{subDesc}</p>
               </a>

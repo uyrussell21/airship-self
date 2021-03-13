@@ -36,7 +36,7 @@ const NavBar = () => (
 
     <Link href="/">
       <a className="navbar-brand">
-        <img src="logo-colored.png" alt="Airship" />
+        <img src="/logo-colored.png" alt="Airship" />
       </a>
     </Link>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
