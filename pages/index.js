@@ -1,6 +1,9 @@
 import React from "react";
-import Sample from "@pages/Sample";
+import Home from "@pages/Home";
 
-const index = () => <Sample />;
+const index = () => (
+  <>
+  </>
+);
 
 export default index;
