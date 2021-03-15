@@ -1,0 +1,34 @@
+#cta-btn {
+  padding: 10px 44px;
+  border-radius: 100px;
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--size-body);
+  display: inline-block;
+
+  &.main {
+    color: #fff;
+
+    &.red {
+      background: var(--red-btn);
+    }
+
+    &.blue {
+      background: var(--blue-btn);
+    }
+  }
+
+  &.alt {
+    border: 3px solid;
+    padding: 7px 32px;
+
+    &.red {
+      color: var(--red-btn);
+      border-color: var(--red-btn);
+    }
+
+    &.blue {
+      color: var(--blue-btn);
+      border-color: var(--blue-btn);
+    }
+  }
+}

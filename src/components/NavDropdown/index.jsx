@@ -1,11 +1,11 @@
 import Link from 'next/link'
 
 const NavDropdown = ({ title, href, subNavs }) => (
-  <li key={href} className="nav-item">
-    <button className="btn nav-link" type="button" data-bs-toggle="collapse" data-bs-target="#subLinks" aria-expanded="false" aria-controls="subLinks">
+  <li key={href}>
+    <button type="button" data-bs-toggle="collapse" data-bs-target="#subLinks" aria-expanded="false" aria-controls="subLinks">
       {title}
     </button>
-    <ul className="position-absolute collapse navbar-nav" id="subLinks">
+    <ul className="collapse navbar-nav" id="subLinks">
       {subNavs.map(([subTitle, subDesc]) => {
         const subHref = subTitle.toLowerCase().split(" ").join("-")
         return (

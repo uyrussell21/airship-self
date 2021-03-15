@@ -1,6 +1,9 @@
-import DemoButton from "@components/DemoButton"
+import ContactEmail from "@components/ContactEmail"
+import ContactPhone from "@components/ContactPhone"
+import CtaButton from "@components/CtaButton"
 import NavDropdown from "@components/NavDropdown"
 import Link from "next/link"
+import { useState } from "react"
 
 const siteNavs = {
   "Features": {
@@ -21,39 +24,59 @@ const mainNavs = Object.entries(siteNavs)
 
 const TopBar = () => (
   <address>
-    <div>
-      <i className="fas fa-phone-alt" />
-      <a href="tel:0917-537-8250">+(63) 917-537-8250</a>
-      
-      <i className="fas fa-envelope" />
-      <a href="mailto:hello@airship.me">hello@airship.me</a>
+    <div className="container-sm">
+      <ContactPhone />
+      <ContactEmail />
     </div>
   </address>
 )
 
-const NavBar = () => (
-  <nav className="navbar container-md navbar-expand-md navbar-light">
+const Hamburger = ({ openHamMenu, target, isActive }) => {
+  const openHam = () => {
+    openHamMenu();
+  }
 
-    <Link href="/">
-      <a className="navbar-brand">
-        <img src="/logo-colored.png" alt="Airship" />
-      </a>
-    </Link>
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
+  return (
+    <button
+    id="hamburger"
+    onClick={openHam}
+    aria-expanded={isActive ? "true" : "false"} aria-controls={target}>
+      <span className="bar" />
+      <span className="bar" />
+      <span className="bar" />
+    </button>
+  )
+}
 
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav">
+const NavBar = () => {
+  const [isActive, setIsActive] = useState(false)
+
+  const openHamMenu = () => {
+    setIsActive(!isActive)
+  }
+
+  return (
+    <nav className={`container-sm ${isActive ? "active" : ""}`}>
+
+      <Link href="/">
+        <a>
+          <img src="/logo-colored.png" alt="Airship" />
+        </a>
+      </Link>
+
+      <Hamburger openHamMenu={openHamMenu}
+        target="main-nav" isActive={isActive}/>
+
+      <ul id="main-nav">
         {mainNavs.map(([title, sub]) => {
           const href = title.toLowerCase().split(" ").join("-") 
           const subNavs = Object.entries(sub)
 
           if (subNavs.length === 0) {
             return (
-              <li key={href} className="nav-item">
+              <li key={href}>
                 <Link href={href}>
-                  <a className="nav-link">{title}</a>
+                  <a>{title}</a>
                 </Link>
               </li>
             )}
@@ -67,15 +90,15 @@ const NavBar = () => (
             )
         })}
 
-        <li className="nav-link">
-          <DemoButton type="main" />
+        <li>
+          <CtaButton className="main red" />
         </li>
         
       </ul>
-    </div>
 
-  </nav>
-)
+    </nav>
+  )
+}
 
 const PageHeader = () => (
   <header>

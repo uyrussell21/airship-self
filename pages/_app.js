@@ -1,11 +1,9 @@
+import PageHeader from "@components/PageHeader";
 import React from "react";
 import Head from "next/head";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "../src/styles/theme.scss";
-import "../src/styles/custom.scss";
-import "../src/styles/pages.scss";
-import PageHeader from "@components/PageHeader";
+import "../src/styles/global.scss";
 
 // Router.events.on('routeChangeStart', (url) => {
 //   console.log(`Loading: ${url}`)
@@ -18,14 +16,8 @@ const App = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
-        <script src="https://kit.fontawesome.com/c40de2b7f1.js" crossorigin="anonymous"></script>
-
-        {/* <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-          crossorigin="anonymous"
-        /> */}
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans:ital,wght@0,400;0,800;1,400;1,700&family=Roboto&display=swap" rel="stylesheet" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Airship Web</title>

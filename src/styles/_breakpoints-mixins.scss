@@ -1,0 +1,40 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+@mixin breakpoints($size) {
+  @if map-has-key($grid-breakpoints, $size) {
+    @media (min-width: #{map-get($grid-breakpoints, $size)}) {
+      @content;
+    }
+  }
+  @else {
+    @warn "No such size for breakpoint."
+  }
+}
+
+@mixin wavy-border() {
+  position: relative;
+  z-index: 0;
+
+  &::after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: calc(var(--wavy-height) / var(--wavy-offset-mult) * -1);
+    left: 0;
+    right: 0;
+    height: var(--wavy-height);
+    background-image: url("./../../images/footer-waves.svg");
+    background-size: 100% 100%;
+  }
+
+  &+ section {
+    padding: calc(var(--wavy-height) / (var(--wavy-offset-mult) - 0.4)) 0 80px;
+  }
+}

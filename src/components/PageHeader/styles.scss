@@ -1,0 +1,137 @@
+header address {
+  background-color: var(--dark-grey);
+  font-size: clamp(12px, 3vw, 16px);
+  margin: 0;
+  color: #fff;
+
+  > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 12px;
+
+    > div {
+      &:not(:last-of-type) {
+        margin-right: 20px;
+      }
+
+      a {
+        margin-left: 5px;
+      }
+    }
+
+    @include breakpoints(md) {
+      justify-content: flex-end;
+    }
+  }
+}
+
+
+// Navbar
+nav {
+  padding: 30px 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    padding: 10px 0;
+  }
+}
+
+// Hamburger Icon
+#hamburger {
+  --ham-dim: 36px;
+  border-radius: 3px;
+  background: var(--red-btn);
+  width: var(--ham-dim);
+  height: var(--ham-dim);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+
+  .bar {
+    --bar-width: 20px;
+    --bar-height: 2px;
+    --bar-margin: 8px;
+    position: relative;
+    display: block;
+    margin-bottom: var(--bar-margin);
+    width: var(--bar-width);
+    height: var(--bar-height);
+
+    &:last-of-type {
+      margin: 0;
+    }
+
+    &::before, &::after {
+      position: absolute;
+      content: "";
+      width: calc(var(--bar-width) / 2);
+      height: var(--bar-height);
+      background: #fff;
+      top: 0;
+      transition: all 0.1s;
+    }
+
+    &::before {
+      left: 0;
+      transform-origin: left;
+    }
+
+    &::after {
+      right: 0;
+      transform-origin: right;
+    }
+  }
+}
+
+nav.active #hamburger .bar {
+  &::before, &::after {
+    width: 70%;
+  }
+
+  &:nth-of-type(1)::before, &:nth-of-type(3)::after {
+    transform: rotate(45deg);
+  }
+
+  &:nth-of-type(1)::after, &:nth-of-type(3)::before {
+    transform: rotate(-45deg);
+  }
+
+  &:nth-of-type(2) {
+    &::before, &::after {
+      width: 0;
+    }
+  }
+}
+
+// Nav List
+#main-nav {
+  flex-basis: 100%;
+  max-width: 1440px;
+  display: flex;
+  background: #fff;
+  flex-flow: column;
+  align-items: center;
+  
+  padding: 0 12px;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+  z-index: 9;
+  transition: opacity 0.1s;
+
+  li {
+    padding: 12px 0;
+  }
+}
+
+nav.active #main-nav {
+  visibility: visible;
+  opacity: 1;
+}
