@@ -3,6 +3,7 @@ import Home from "@pages/Home";
 
 const index = () => (
   <>
+    <Home />
   </>
 );
 

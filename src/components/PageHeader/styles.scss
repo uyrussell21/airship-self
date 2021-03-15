@@ -111,6 +111,10 @@ nav.active #hamburger .bar {
 }
 
 // Nav List
+nav {
+  position: relative;
+}
+
 #main-nav {
   flex-basis: 100%;
   max-width: 1440px;
@@ -134,4 +138,9 @@ nav.active #hamburger .bar {
 nav.active #main-nav {
   visibility: visible;
   opacity: 1;
+}
+
+// Remove Hamburger Breakpoint
+@include breakpoints(md) {
+
 }

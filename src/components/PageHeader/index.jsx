@@ -69,13 +69,13 @@ const NavBar = () => {
 
       <ul id="main-nav">
         {mainNavs.map(([title, sub]) => {
-          const href = title.toLowerCase().split(" ").join("-") 
+          const href = title.toLowerCase().split(" ").join("-")
           const subNavs = Object.entries(sub)
 
           if (subNavs.length === 0) {
             return (
               <li key={href}>
-                <Link href={href}>
+                <Link href={`/${href}`}>
                   <a>{title}</a>
                 </Link>
               </li>
@@ -83,6 +83,7 @@ const NavBar = () => {
 
             return (
               <NavDropdown
+                key={href}
                 title={title}
                 href={href}
                 subNavs={subNavs}
@@ -90,7 +91,7 @@ const NavBar = () => {
             )
         })}
 
-        <li>
+        <li key="cta-btn">
           <CtaButton className="main red" />
         </li>
         
