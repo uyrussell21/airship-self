@@ -1,6 +1,6 @@
 header address {
   background-color: var(--dark-grey);
-  font-size: clamp(12px, 3vw, 16px);
+  font-size: var(--size-body-sm);
   margin: 0;
   color: #fff;
 
@@ -111,6 +111,7 @@ nav.active #hamburger .bar {
   max-width: 1440px;
   display: flex;
   background: #fff;
+  color: #000;
   flex-flow: column;
   align-items: center;
   
@@ -121,9 +122,9 @@ nav.active #hamburger .bar {
   left: 0;
   right: 0;
   top: 100%;
-  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--hover-shadow);
   z-index: 9;
-  transition: opacity 0.1s;
+  transition: opacity 0.2s;
 
   li {
     padding: 12px 0;

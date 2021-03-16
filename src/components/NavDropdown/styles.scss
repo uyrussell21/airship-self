@@ -1,0 +1,84 @@
+button {
+  padding: 0 10px;
+  
+  svg {
+    margin-left: 10px;
+    transition: all 0.2s;
+  }
+}
+
+
+ul.sub-nav {
+  height: 0;
+  overflow: hidden;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  text-align: left;
+  z-index: 9;
+  transition: all 0.3s;
+
+  a {
+    display: grid;
+    grid-template-columns: clamp(35px, 10vw, 75px) 1fr;
+    grid-gap: 10px;
+    padding: 5px 20px;
+    max-width: 350px;
+    align-items: center;
+
+    &:hover, &:focus {
+      background: rgba(0, 0, 0, 0.1);
+
+      img {
+        transform: scale(1);
+      }
+
+      p:first-of-type {
+        color: var(--red-btn);
+      }
+    }
+  }
+
+  img {
+    transform: scale(0.9);
+    transition: all 0.2s;
+  }
+
+  p {
+    &:first-of-type {
+      color: var(--bright-blue);
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+
+    &:last-of-type {
+      font-size: var(--size-body-sm);
+      color: var(--light-grey);
+    }
+  }
+
+  @include breakpoints(lg) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    a {
+      margin: 20px;
+    }
+  }
+}
+
+// When Sub Nav is Open
+button.active {
+  svg {
+    transform: rotate(-180deg);
+  }
+
+  + ul.sub-nav {
+    display: flex;
+    height: unset;
+  }
+}

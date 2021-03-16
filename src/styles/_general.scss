@@ -8,7 +8,9 @@
   --red-btn: #fe004b;
   --blue-btn: #8598bd;
   --bright-blue: #017ade;
+  --hover-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.25);
   --size-body: clamp(14px, 4vw, 18px);
+  --size-body-sm: clamp(12px, 3vw, 16px);
 }
 
 html {

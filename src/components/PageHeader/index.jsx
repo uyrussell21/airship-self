@@ -31,16 +31,13 @@ const TopBar = () => (
   </address>
 )
 
-const Hamburger = ({ openHamMenu, target, isActive }) => {
-  const openHam = () => {
-    openHamMenu();
-  }
-
+const Hamburger = ({ toggleHamMenu, target, isHamOpen }) => {
   return (
     <button
     id="hamburger"
-    onClick={openHam}
-    aria-expanded={isActive ? "true" : "false"} aria-controls={target}>
+    onClick={() => toggleHamMenu()}
+    type="button"
+    aria-expanded={isHamOpen ? "true" : "false"} aria-controls={target}>
       <span className="bar" />
       <span className="bar" />
       <span className="bar" />
@@ -49,14 +46,20 @@ const Hamburger = ({ openHamMenu, target, isActive }) => {
 }
 
 const NavBar = () => {
-  const [isActive, setIsActive] = useState(false)
+  const [isHamOpen, setIsActive] = useState(false)
+  
+  const [currentNavOpen, setCurrentNavOpen] = useState(null);
 
-  const openHamMenu = () => {
-    setIsActive(!isActive)
+  const toggleHamMenu = () => {
+    setIsActive(!isHamOpen)
+  }
+
+  const toggleSubNav = (currentNav) => {
+    setCurrentNavOpen(currentNavOpen === currentNav ? null : currentNav)
   }
 
   return (
-    <nav className={`container-sm ${isActive ? "active" : ""}`}>
+    <nav className={`container-sm ${isHamOpen ? "active" : ""}`}>
 
       <Link href="/">
         <a>
@@ -64,31 +67,33 @@ const NavBar = () => {
         </a>
       </Link>
 
-      <Hamburger openHamMenu={openHamMenu}
-        target="main-nav" isActive={isActive}/>
+      <Hamburger {...{toggleHamMenu}}
+      target="main-nav" {...{isHamOpen}}/>
 
       <ul id="main-nav">
         {mainNavs.map(([title, sub]) => {
           const href = title.toLowerCase().split(" ").join("-")
           const subNavs = Object.entries(sub)
+          let navItem
 
           if (subNavs.length === 0) {
-            return (
-              <li key={href}>
-                <Link href={`/${href}`}>
-                  <a>{title}</a>
-                </Link>
-              </li>
-            )}
-
-            return (
+            navItem = (
+              <Link href={`/${href}`}>
+                <a>{title}</a>
+              </Link>
+            )
+          } else {
+            navItem = (
               <NavDropdown
-                key={href}
-                title={title}
-                href={href}
-                subNavs={subNavs}
+                {...{title, href, subNavs, toggleSubNav, currentNavOpen}}
               />
             )
+          }
+          return (
+            <li key={href}>
+              {navItem}
+            </li>
+          )
         })}
 
         <li key="cta-btn">
