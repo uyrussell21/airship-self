@@ -1,5 +1,6 @@
 import ContactEmail from "@components/ContactEmail"
 import ContactPhone from "@components/ContactPhone"
+import { faFacebookF } from "@fortawesome/free-brands-svg-icons"
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Link from "next/link"
@@ -10,7 +11,7 @@ const footerFeatures = ["Feature Overview", "Track and Trace", "Booking System",
 
 const FooterNav = () => {
   return (
-    <div>
+    <div className="container-sm">
       <div className="logo-div">
         <h1>
           <Link href="/">
@@ -31,7 +32,7 @@ const FooterNav = () => {
 
               return (
                 <li key={href}>
-                  <Link href={title === "Home" ? "/" : href}>
+                  <Link href={"/" + (title === "Home" ? "" : href)}>
                     <a>{title}</a>
                   </Link>
                 </li>
@@ -60,18 +61,24 @@ const FooterNav = () => {
         <div className="contact">
           <h2>Contact Us</h2>
           <address>
-            <FontAwesomeIcon icon={faMapMarkerAlt} />
             <div>
-              <p>Philippines</p>
-              <p>226 Ortigas Avenue</p>
-              <p>San Juan City</p>
-              <p>Metro Manila, Philippines</p>
+              <FontAwesomeIcon icon={faMapMarkerAlt} />
+              <div>
+                <p>Philippines</p>
+                <p>226 Ortigas Avenue</p>
+                <p>San Juan City</p>
+                <p>Metro Manila, Philippines</p>
+              </div>
             </div>
 
             <ContactEmail />
 
             <ContactPhone />
-            <Link href="https://fb.com/airshiplogistics">@airshiplogistics</Link>
+            
+            <div>
+              <FontAwesomeIcon icon={faFacebookF} />
+              <Link href="https://fb.com/airshiplogistics">@airshiplogistics</Link>
+            </div>
           </address>
         </div>
       </div>
