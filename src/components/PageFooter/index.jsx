@@ -11,7 +11,7 @@ const footerFeatures = ["Feature Overview", "Track and Trace", "Booking System",
 const FooterNav = () => {
   return (
     <div>
-      <div class="logo-div">
+      <div className="logo-div">
         <h1>
           <Link href="/">
             <a>
@@ -22,7 +22,7 @@ const FooterNav = () => {
         <p>Airship logistics solutions is a ready-to-use software that helps couriers run their business and deliver more.</p>
       </div>
 
-      <div class="navs-contact">
+      <div className="navs-contact">
         <nav>
           <h2>Pages</h2>
           <ul>
@@ -30,8 +30,8 @@ const FooterNav = () => {
               const href = title.toLowerCase().split(" ").join("-")
 
               return (
-                <li>
-                  <Link href={href}>
+                <li key={href}>
+                  <Link href={title === "Home" ? "/" : href}>
                     <a>{title}</a>
                   </Link>
                 </li>
@@ -47,7 +47,7 @@ const FooterNav = () => {
               const href = title.toLowerCase().split(" ").join("-")
 
               return (
-                <li>
+                <li key={href}>
                   <Link href={`/features/${href}`}>
                     <a>{title}</a>
                   </Link>
@@ -57,7 +57,7 @@ const FooterNav = () => {
           </ul>
         </nav>
 
-        <div class="contact">
+        <div className="contact">
           <h2>Contact Us</h2>
           <address>
             <FontAwesomeIcon icon={faMapMarkerAlt} />
@@ -71,7 +71,7 @@ const FooterNav = () => {
             <ContactEmail />
 
             <ContactPhone />
-            <a href="">@airshiplogistics</a>
+            <Link href="https://fb.com/airshiplogistics">@airshiplogistics</Link>
           </address>
         </div>
       </div>
@@ -80,10 +80,12 @@ const FooterNav = () => {
 }
 
 const PageFooter = () => (
-  <footer>
-    <FooterNav />
+  <>
+    <footer>
+      <FooterNav />
+    </footer>
     <div className="black-strip" />
-  </footer>
+  </>
 )
 
 export default PageFooter

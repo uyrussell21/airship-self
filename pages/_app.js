@@ -1,7 +1,7 @@
 import PageHeader from "@components/PageHeader";
 import React from "react";
 import Head from "next/head";
-import PageFooter from "@components/Page Footer";
+import PageFooter from "@components/PageFooter";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../src/styles/global.scss";
