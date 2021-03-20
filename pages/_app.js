@@ -1,6 +1,7 @@
 import PageHeader from "@components/PageHeader";
 import React from "react";
 import Head from "next/head";
+import PageFooter from "@components/Page Footer";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../src/styles/global.scss";
@@ -26,6 +27,8 @@ const App = ({ Component, pageProps }) => {
       <PageHeader />
 
       <Component {...pageProps} />
+
+      <PageFooter />
 
       <script
         src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
