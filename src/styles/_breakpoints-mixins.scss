@@ -38,3 +38,9 @@ $grid-breakpoints: (
     padding: calc(var(--wavy-height) / (var(--wavy-offset-mult) - 0.4)) 0 80px;
   }
 }
+
+@mixin grid-contact() {
+  display: grid;
+  grid-template-columns: 2em 1fr;
+  column-gap: 5px;
+}

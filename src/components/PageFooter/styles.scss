@@ -44,8 +44,25 @@ footer {
       display: block;
     }
 
-    address > div:not(:last-of-type) {
-      margin-bottom: 1.5em;
+    address {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    address > div {
+      svg {
+        place-self: center;
+      }
+
+      &:not(:first-of-type) {
+        text-align: left;
+        @include grid-contact;
+      }
+      
+      &:not(:last-of-type) {
+        margin-bottom: 1.5em;
+      }
     }
 
   }
@@ -65,13 +82,10 @@ footer {
 
     .contact address {
       text-align: left;
-      display: flex;
-      flex-direction: column;
+      align-items: flex-start;
 
       > div {
-        display: grid;
-        column-gap: 5px;
-        grid-template-columns: 30px 1fr;
+        @include grid-contact;
 
         svg {
           place-self: center;
@@ -92,7 +106,6 @@ footer {
   @include breakpoints(lg) {
     > div {
       text-align: left;
-      display: flex;
       flex-flow: row;
     }
 
