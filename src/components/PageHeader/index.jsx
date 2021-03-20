@@ -35,7 +35,7 @@ const Hamburger = ({ toggleHamMenu, target, isHamOpen }) => {
   return (
     <button
     id="hamburger"
-    onClick={() => toggleHamMenu()}
+    onClick={toggleHamMenu}
     type="button"
     aria-expanded={isHamOpen ? "true" : "false"} aria-controls={target}>
       <span className="bar" />
@@ -67,8 +67,8 @@ const NavBar = () => {
         </a>
       </Link>
 
-      <Hamburger {...{toggleHamMenu}}
-      target="main-nav" {...{isHamOpen}}/>
+      <Hamburger {...{toggleHamMenu, isHamOpen}}
+      target="main-nav"/>
 
       <ul id="main-nav">
         {mainNavs.map(([title, sub]) => {

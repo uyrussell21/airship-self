@@ -1,5 +1,5 @@
 button {
-  padding: 0 10px;
+  padding: 0 5px;
   
   svg {
     margin-left: 10px;
@@ -7,18 +7,18 @@ button {
   }
 }
 
-
 ul.sub-nav {
   height: 0;
   overflow: hidden;
-  display: none;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background: #fff;
+  border-bottom: solid 1px var(--quote-border);
   text-align: left;
   z-index: 9;
-  transition: all 0.3s;
+  transition: height 0.3s ease-out;
 
   a {
     display: grid;
@@ -64,6 +64,7 @@ ul.sub-nav {
     top: 100%;
     left: 0;
     right: 0;
+    box-shadow: var(--hover-shadow);
 
     a {
       margin: 20px;
@@ -71,14 +72,11 @@ ul.sub-nav {
   }
 }
 
-// When Sub Nav is Open
-button.active {
-  svg {
-    transform: rotate(-180deg);
-  }
+// Toggling Sub Nav Styles
+button.active svg {
+  transform: rotate(-180deg);
+}
 
-  + ul.sub-nav {
-    display: flex;
-    height: unset;
-  }
+ul.sub-nav.closed {
+  display: none;
 }
