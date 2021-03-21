@@ -63,7 +63,7 @@ const NavBar = () => {
 
       <Link href="/">
         <a>
-          <img src="/logo-colored.png" alt="Airship" />
+          <img src="/static/logo-colored.png" alt="Airship" />
         </a>
       </Link>
 

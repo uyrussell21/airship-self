@@ -14,11 +14,13 @@ $grid-breakpoints: (
     }
   }
   @else {
-    @warn "No such size for breakpoint."
+    @warn "No such size for breakpoint.";
   }
 }
 
 @mixin wavy-border() {
+  --wavy-height: min(15vw, 218px);
+  --wavy-offset-mult: 1.5;
   position: relative;
   z-index: 0;
 
@@ -30,7 +32,7 @@ $grid-breakpoints: (
     left: 0;
     right: 0;
     height: var(--wavy-height);
-    background-image: url("./../../images/footer-waves.svg");
+    background-image: url("/static/footer-waves.svg");
     background-size: 100% 100%;
   }
 

@@ -16,7 +16,7 @@ const FooterNav = () => {
         <h1>
           <Link href="/">
             <a>
-              <img src="/logo-white.png" alt="Airship" />
+              <img src="/static/logo-white.png" alt="Airship" />
             </a>
           </Link>
         </h1>

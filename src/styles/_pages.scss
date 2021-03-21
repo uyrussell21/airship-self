@@ -1,12 +1,8 @@
 @import "../pages/Home/styles.scss";
 
 .hero {
-  h1 {
-    font-size: var(--size-h1);
-  }
-  
   p {
     margin: 25px auto;
-    font-size: var(--size-body-lg);
+    font-size: var(--size-body-md);
   }
 }

@@ -38,7 +38,7 @@ const NavDropdown = ({ title, href, subNavs, toggleSubNav, currentNavOpen }) => 
             <li key={subPath}>
               <Link href={subPath}>
                 <a>
-                  <img src={`/overview/${subHref}.png`} alt={subTitle}/>
+                  <img src={`/static/overview/${subHref}.png`} alt={subTitle}/>
                   <div>
                     <p>{subTitle}</p>
                     <p>{subDesc}</p>

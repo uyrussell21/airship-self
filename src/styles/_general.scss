@@ -11,9 +11,10 @@
   --hover-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.25);
   --size-body: clamp(14px, 4vw, 18px);
   --size-body-sm: clamp(12px, 3vw, 16px);
-  --size-body-lg: clamp(16px, 4vw, 22px);
+  --size-body-md: clamp(16px, 4vw, 22px);
+  --size-body-lg: clamp(18px, 5vw, 24px);
   --size-h1: clamp(36px, 9vw, 48px);
-  --size-h3: clamp(18px, 5vw, 24px);
+  --size-h2: clamp(28px, 7vw, 36px);
 }
 
 html {
@@ -39,8 +40,12 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--dark-grey);
 }
 
+h1 { font-size: var(--size-h1); }
+h2 { font-size: var(--size-h2); }
+
 p {
   margin: 0;
+  color: var(--light-grey);
 }
 
 a {
@@ -57,7 +62,7 @@ button {
   background: none;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
-  font-size: var(--size-body);
+  font-size: inherit;
   color: inherit;
 }
 
@@ -79,4 +84,8 @@ ul {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.wavy-border {
+  @include wavy-border;
 }
