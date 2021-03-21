@@ -30,21 +30,21 @@ const content = [
 
 const Hero = () => (
   <section>
-      <div className="hero container-sm">
-        <h1>Software built for Couriers</h1>
-        <p>Airship is an end-to-end, ready-to-use software, that offers all the needed tech components to run your courier business</p>
-        <img src="/static/home/home-hero.png" alt="Graphical overview of Airship" />
-      </div>
+    <div className="hero container-sm">
+      <h1>Software built for Couriers</h1>
+      <p>Airship is an end-to-end, ready-to-use software, that offers all the needed tech components to run your courier business</p>
+      <img src="/static/home/home-hero.png" alt="Graphical overview of Airship" />
+    </div>
 
-      <div className="hero-logos">
-        <p>As seen in</p>
-        <div>
-          <img src="/static/home/home-logo-tia.png" alt="Tech In Asia" />
-          <img src="/static/home/home-logo-bw.png" alt="BusinessWorld" />
-          <img src="/static/home/home-logo-is.png" alt="IdeaSpace Foundation" />
-        </div>
+    <div className="hero-logos">
+      <p>As seen in</p>
+      <div>
+        <img src="/static/home/home-logo-tia.png" alt="Tech In Asia" />
+        <img src="/static/home/home-logo-bw.png" alt="BusinessWorld" />
+        <img src="/static/home/home-logo-is.png" alt="IdeaSpace Foundation" />
       </div>
-    </section>
+    </div>
+  </section>
 )
 
 const WhyAirship = () => (
@@ -68,7 +68,7 @@ const Home = () => (
   <main id="home">
     <Hero />
     <WhyAirship />
-    <CtaSection showFeatureBtn="true" />
+    <CtaSection />
   </main>
 )
 

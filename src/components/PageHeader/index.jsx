@@ -34,10 +34,11 @@ const TopBar = () => (
 const Hamburger = ({ toggleHamMenu, target, isHamOpen }) => {
   return (
     <button
-    id="hamburger"
-    onClick={toggleHamMenu}
-    type="button"
-    aria-expanded={isHamOpen ? "true" : "false"} aria-controls={target}>
+      id="hamburger"
+      onClick={toggleHamMenu}
+      type="button"
+      aria-expanded={isHamOpen ? "true" : "false"} aria-controls={target}
+    >
       <span className="bar" />
       <span className="bar" />
       <span className="bar" />

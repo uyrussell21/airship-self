@@ -25,8 +25,10 @@ const NavDropdown = ({ title, href, subNavs, toggleSubNav, currentNavOpen }) => 
   return (
     <>
       <button onClick={() => toggleSubNav(href)}
-      className={isOpen ? "active" : ""}
-      type="button" aria-expanded={isOpen ? true : false} aria-controls={navID}>
+        className={`${isOpen ? "active" : ""} sub-nav-btn`}
+        type="button"
+        aria-expanded={isOpen ? true : false} aria-controls={navID}
+      >
         {title}<FontAwesomeIcon icon={faChevronDown}/>
       </button>
 

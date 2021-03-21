@@ -1,4 +1,4 @@
-button {
+button.sub-nav-btn {
   padding: 0 5px;
   
   svg {
@@ -73,7 +73,7 @@ ul.sub-nav {
 }
 
 // Toggling Sub Nav Styles
-button.active svg {
+button.sub-nav-btn svg {
   transform: rotate(-180deg);
 }
 
