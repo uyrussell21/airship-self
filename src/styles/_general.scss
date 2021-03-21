@@ -11,6 +11,9 @@
   --hover-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.25);
   --size-body: clamp(14px, 4vw, 18px);
   --size-body-sm: clamp(12px, 3vw, 16px);
+  --size-body-lg: clamp(16px, 4vw, 22px);
+  --size-h1: clamp(36px, 9vw, 48px);
+  --size-h3: clamp(18px, 5vw, 24px);
 }
 
 html {

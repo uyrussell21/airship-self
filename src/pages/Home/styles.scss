@@ -1,0 +1,38 @@
+#home .hero {
+  padding: 60px 12px;
+
+  p {
+    max-width: 480px;
+
+    @include breakpoints(md) {
+      width: 50%;
+      margin-bottom: -95px;
+    }
+  }
+}
+
+#home .hero-logos {
+  background: var(--bg-logos);
+  padding: 25px 0;
+
+  p {
+    font-size: var(--size-h3);
+    font-family: 'Merriweather', serif;
+    margin: 0 0 10px;
+  }
+
+  div {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  img {
+    margin: 15px 15px 0;
+
+    &:first-of-type {
+      margin-top: 10px;
+    }
+  }
+}
