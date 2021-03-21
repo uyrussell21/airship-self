@@ -1,10 +1,7 @@
-import React from "react";
 import Home from "@pages/Home";
 
 const index = () => (
-  <>
-    <Home />
-  </>
+  <Home />
 );
 
 export default index;

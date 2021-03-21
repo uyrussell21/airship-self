@@ -19,8 +19,6 @@ $grid-breakpoints: (
 }
 
 @mixin wavy-border() {
-  --wavy-height: min(15vw, 218px);
-  --wavy-offset-mult: 1.5;
   position: relative;
   z-index: 0;
 
@@ -37,7 +35,9 @@ $grid-breakpoints: (
   }
 
   &+ section {
-    padding: calc(var(--wavy-height) / (var(--wavy-offset-mult) - 0.4)) 0 80px;
+    --pad-y: 80px;
+    --pad-top: calc(var(--wavy-height) / (var(--wavy-offset-mult) - 0.5));
+    padding: max(var(--pad-y), var(--pad-top)) 12px 80px;
   }
 }
 

@@ -1,3 +1,4 @@
+import CtaSection from "@components/CtaSection"
 import WhyAirshipItem from "./WhyAirshipItem"
 
 const content = [
@@ -67,6 +68,7 @@ const Home = () => (
   <main id="home">
     <Hero />
     <WhyAirship />
+    <CtaSection showFeatureBtn="true" />
   </main>
 )
 
