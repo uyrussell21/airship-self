@@ -15,10 +15,22 @@ ul.sub-nav {
   justify-content: center;
   align-items: center;
   background: #fff;
-  border-bottom: solid 1px var(--quote-border);
+  border-bottom: solid 2px var(--quote-border);
   text-align: left;
   z-index: 9;
-  transition: height 0.3s ease-out;
+  transition: height 0.2s ease-out;
+
+  li:first-of-type {
+    width: 100%;
+    border-bottom: 2px dashed var(--quote-border);
+    display: flex;
+    justify-content: center;
+    
+    a {
+      max-width: 500px;
+      grid-template-columns: clamp(35px, 10vw, 120px) 1fr;
+    }
+  }
 
   a {
     display: grid;
@@ -73,7 +85,7 @@ ul.sub-nav {
 }
 
 // Toggling Sub Nav Styles
-button.sub-nav-btn svg {
+button.sub-nav-btn.active svg {
   transform: rotate(-180deg);
 }
 
