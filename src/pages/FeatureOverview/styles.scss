@@ -1,0 +1,42 @@
+#overview .hero {
+  img {
+    width: 500px;
+  }
+
+  @include breakpoints(lg) {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    column-gap: 30px;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    img {
+      width: 50%;
+    }
+  }
+}
+
+#overview .blue-stat {
+  background: var(--bright-blue);
+  padding: 4em 12px;
+  
+  * {
+    color: #fff;
+  }
+
+  h2 {
+    max-width: 840px;
+    margin: 10px auto 20px;
+
+    span {
+      display: block;
+    }
+  }
+
+  p {
+    max-width: 550px;
+  }
+}

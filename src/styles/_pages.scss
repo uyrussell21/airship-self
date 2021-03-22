@@ -1,6 +1,9 @@
 @import "../pages/Home/styles.scss";
+@import "../pages/FeatureOverview/styles.scss";
 
 .hero {
+  padding: 4em 12px;
+
   p {
     margin: 25px auto;
     font-size: var(--size-body-md);
