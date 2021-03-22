@@ -5,7 +5,7 @@ import NavDropdown from "@components/NavDropdown"
 import Link from "next/link"
 import { useState } from "react"
 
-const siteNavs = {
+export const siteNavs = {
   "Features": {
     "Feature Overview": "Grow your courier business by making the shift to Airship",
     "Track and Trace": "Track your packages every step of the way, in real-time",

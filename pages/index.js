@@ -1,7 +1,7 @@
 import Home from "@pages/Home";
 
-const index = () => (
+const HomePage = () => (
   <Home />
 );
 
-export default index;
+export default HomePage;
