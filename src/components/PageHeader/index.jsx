@@ -4,23 +4,7 @@ import CtaButton from "@components/CtaButton"
 import NavDropdown from "@components/NavDropdown"
 import Link from "next/link"
 import { useState } from "react"
-
-export const siteNavs = {
-  "Features": {
-    "Feature Overview": "Grow your courier business by making the shift to Airship",
-    "Track and Trace": "Track your packages every step of the way, in real-time",
-    "Booking System": "Let your customers book and track on their own",
-    "Dispatch Riders": "Assign bookings and packages to your riders",
-    "Cash Collections": "Track cash movements on pickups and deliveries",
-    "Flexible Pricing": "Be flexible with your services and pricing",
-    "Analytics and Reports": "Stay on top of your business with metrics"
-  },
-  "Pricing": {},
-  "Blog": {},
-  "About": {}
-}
-
-const mainNavs = Object.entries(siteNavs)
+import sitemap from "@lib/sitemap.json"
 
 const TopBar = () => (
   <address>
@@ -64,7 +48,7 @@ const NavBar = () => {
 
       <Link href="/">
         <a>
-          <img src="/static/logo-colored.png" alt="Airship" />
+          <img src="/static/logo-colored.png" alt="Airship Logistics" />
         </a>
       </Link>
 
@@ -72,26 +56,17 @@ const NavBar = () => {
       target="main-nav"/>
 
       <ul id="main-nav">
-        {mainNavs.map(([title, sub]) => {
-          const href = title.toLowerCase().split(" ").join("-")
-          const subNavs = Object.entries(sub)
-          let navItem
+        {sitemap.map(({title, slug, subNavs}) => {
+          const navItem = !subNavs
+          ? <Link href={`/${slug}`}>
+              <a>{title}</a>
+            </Link>
+          : <NavDropdown
+              {...{title, slug, subNavs, toggleSubNav, currentNavOpen}}
+            />
 
-          if (subNavs.length === 0) {
-            navItem = (
-              <Link href={`/${href}`}>
-                <a>{title}</a>
-              </Link>
-            )
-          } else {
-            navItem = (
-              <NavDropdown
-                {...{title, href, subNavs, toggleSubNav, currentNavOpen}}
-              />
-            )
-          }
           return (
-            <li key={href}>
+            <li key={slug}>
               {navItem}
             </li>
           )

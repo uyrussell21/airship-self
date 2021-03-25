@@ -1,5 +1,5 @@
-const { default: CtaSection } = require("@components/CtaSection")
-const { default: FeatureCardsSection } = require("@components/FeatureCards")
+import CtaSection from "@components/CtaSection"
+import FeatureCardsSection from "@components/FeatureCards"
 
 const Hero = () => (
   <section className="hero container-sm">

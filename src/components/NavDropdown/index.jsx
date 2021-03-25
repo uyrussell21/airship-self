@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
 import { useEffect, useRef } from 'react'
 
-const NavDropdown = ({ title, href, subNavs, toggleSubNav, currentNavOpen }) => {
-  const navID = `${href}-nav`
-  const isOpen = (href === currentNavOpen) ? true : false
+const NavDropdown = ({ title, slug, subNavs, toggleSubNav, currentNavOpen }) => {
+  const navID = `${slug}-nav`
+  const isOpen = (slug === currentNavOpen) ? true : false
   const subNavEl = useRef(null)
   
   useEffect(() => {
@@ -24,7 +24,7 @@ const NavDropdown = ({ title, href, subNavs, toggleSubNav, currentNavOpen }) => 
 
   return (
     <>
-      <button onClick={() => toggleSubNav(href)}
+      <button onClick={() => toggleSubNav(slug)}
         className={`${isOpen ? "active" : ""} sub-nav-btn`}
         type="button"
         aria-expanded={isOpen ? true : false} aria-controls={navID}
@@ -33,14 +33,13 @@ const NavDropdown = ({ title, href, subNavs, toggleSubNav, currentNavOpen }) => 
       </button>
 
       <ul id={navID} ref={subNavEl} className="sub-nav closed" onTransitionEnd={subNavTransition}>
-        {subNavs.map(([subTitle, subDesc]) => {
-          const subHref = subTitle.toLowerCase().split(" ").join("-")
-          const subPath = `/${href}/${subHref}`
+        {subNavs.map(({title: subTitle, slug: subSlug, desc: subDesc}) => {
+          const subPath = `/${slug}/${subSlug}`
           return (
             <li key={subPath}>
               <Link href={subPath}>
                 <a>
-                  <img src={`/static/overview/${subHref}.png`} alt={subTitle}/>
+                  <img src={`/static/overview/${subSlug}.png`} alt={subTitle}/>
                   <div>
                     <p>{subTitle}</p>
                     <p>{subDesc}</p>

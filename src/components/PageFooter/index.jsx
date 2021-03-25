@@ -4,10 +4,12 @@ import { faFacebookF } from "@fortawesome/free-brands-svg-icons"
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Link from "next/link"
+import sitemap from "@lib/sitemap.json"
 
 const footerPages = ["Home", "Pricing", "For Senders", "Privacy Policy", "Blog", "Contact Us"]
 
-const footerFeatures = ["Feature Overview", "Track and Trace", "Booking System", "Dispatch Riders", "Cash Collections", "Flexible Pricing", "Analytics and Reports"]
+const parentSlug = sitemap[0]["slug"]
+const footerFeatures = sitemap[0]["subNavs"]
 
 const FooterNav = () => {
   return (
@@ -16,7 +18,7 @@ const FooterNav = () => {
         <h1>
           <Link href="/">
             <a>
-              <img src="/static/logo-white.png" alt="Airship" />
+              <img src="/static/logo-white.png" alt="Airship Logistics" />
             </a>
           </Link>
         </h1>
@@ -44,12 +46,11 @@ const FooterNav = () => {
         <nav>
           <h2>Features</h2>
           <ul>
-            {footerFeatures.map(title => {
-              const href = title.toLowerCase().split(" ").join("-")
+            {footerFeatures.map(({title, slug}) => {
 
               return (
-                <li key={href}>
-                  <Link href={`/features/${href}`}>
+                <li key={slug}>
+                  <Link href={`/${parentSlug}/${slug}`}>
                     <a>{title}</a>
                   </Link>
                 </li>

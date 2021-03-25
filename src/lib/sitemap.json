@@ -1,0 +1,55 @@
+[
+  {
+    "title": "Features",
+    "slug": "features",
+    "subNavs": [
+      {
+        "title": "Feature Overview",
+        "slug": "feature-overview",
+        "desc": "Grow your courier business by making the shift to Airship"
+      },
+      {
+        "title": "Track and Trace",
+        "slug": "track-and-trace",
+        "desc": "Track your packages every step of the way, in real-time"
+      },
+      {
+        "title": "Booking System",
+        "slug": "booking-system",
+        "desc": "Let your customers book and track on their own"
+      },
+      {
+        "title": "Dispatch Riders",
+        "slug": "dispatch-riders",
+        "desc": "Assign bookings and packages to your riders"
+      },
+      {
+        "title": "Cash Collections",
+        "slug": "cash-collections",
+        "desc": "Track cash movements on pickups and deliveries"
+      },
+      {
+        "title": "Flexible Pricing",
+        "slug": "flexible-pricing",
+        "desc": "Be flexible with your services and pricing"
+      },
+      {
+        "title": "Analytics and Reports",
+        "slug": "analytics-and-reports",
+        "desc": "Stay on top of your business with metrics"
+      }
+    ]
+  },
+  {
+    "title": "Pricing",
+    "slug": "pricing"
+  },
+  {
+    "title": "Blog",
+    "slug": "blog"
+  },
+  {
+    "title": "About",
+    "slug": "about"
+  }
+]
