@@ -2,12 +2,9 @@ import Link from "next/link"
 import { useRouter } from "next/router"
 import sitemap from "@lib/sitemap.json"
 
-const convertBreadcrumb = (path, main) => {
+const convertBreadcrumb = (path) => {
   const splitPath = path.split("/").slice(1)
-  let subNavs
-  sitemap.forEach(p => {
-    if (splitPath[0].match(p["slug"])) subNavs = p["subNavs"]
-  })
+  let subNavs = sitemap.find(({slug}) => splitPath[0].match(slug))["subNavs"]
   
   return splitPath.map((p, i, arr) => {
     const str = p
@@ -23,11 +20,11 @@ const convertBreadcrumb = (path, main) => {
 
 const Breadcrumb = () => {
   const router = useRouter()
-  const paths = convertBreadcrumb(router.pathname, sitemap)
+  const paths = convertBreadcrumb(router.pathname)
 
   return (
     <nav style={{'--bs-breadcrumb-divider': `">"`}} aria-label="breadcrumb">
-      <ul className="breadcrumb">
+      <ol className="breadcrumb">
         {paths.length > 0 &&
           paths.map(([str, href], i) => (
             i === paths.length - 1
@@ -39,7 +36,7 @@ const Breadcrumb = () => {
               </li>
           ))
         }
-      </ul>
+      </ol>
     </nav>
   )
 }
