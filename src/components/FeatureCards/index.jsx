@@ -4,8 +4,9 @@ import Link from "next/link"
 import { useRouter } from "next/router"
 import sitemap from "@lib/sitemap.json"
 
-const parentSlug = sitemap[0]["slug"]
-const featureList = sitemap[0]["subNavs"].slice(1)
+const features = sitemap.find(({slug}) => slug.match("features"))
+const parentSlug = features["slug"]
+const featureList = features["subNavs"].slice(1)
 
 const FeatureCard = ({ isOverview, isActive, title, slug, desc }) => {
   return (

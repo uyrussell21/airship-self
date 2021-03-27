@@ -1,0 +1,338 @@
+[
+  {
+    "slug": "track-and-trace",
+    "hero": {
+      "head": "Track your packages every step of the way",
+      "lead": "Have all platforms and all roles working together to update where the packages are at."
+    },
+    "body": [
+      {
+        "head": "Get delivery updates in real-time from your riders",
+        "lead": "Riders can accept tasks and update them as successful or failed through their riders' app.",
+        "list": [
+          {
+            "title": "Accept or Reject Tasks",
+            "desc": "Upon assigning a package, riders can opt to accept or reject the task and this will get reflected."
+          },
+          {
+            "title": "Complete or cancel pick ups",
+            "desc": "Riders can easily scan tens or hundreds of packages upon picking up and the system gets updated instantly."
+          },
+          {
+            "title": "Complete deliveries",
+            "desc": "Riders can complete the deliveries while on the road, no need for them to go back to hub to update the package status."
+          }
+        ]
+      },
+      {
+        "head": "Keep the ball rolling - update packages as a team",
+        "lead": "Encoders shouldn't be the only ones updating the package's status. Get your whole team involved.",
+        "list": [
+          {
+            "title": "Reduce back office overhead",
+            "desc": "Majority of the team should be out there making deliveries. Airship helps companies keep overhead low by delegating the package status task across the team."
+          },
+          {
+            "title": "Keep everyone up-to-date",
+            "desc": "Just scan the waybill on the system and view the package's history."
+          },
+          {
+            "title": "Make your team accountable",
+            "desc": "Lost a package? Identify who last scanned the waybill."
+          }
+        ]
+      },
+      {
+        "head": "Print waybills and barcodes with Airship",
+        "lead": "Airship uses industry-standard waybill size and displays content according to the best practices.",
+        "list": [
+          {
+            "title": "Everyone can generate waybills",
+            "desc": "Your team can generate waybills as soon as the packages are created, or senders can print them on their own."
+          },
+          {
+            "title": "Set your own reference numbers",
+            "desc": "If you don't want to use system-generated waybill numbers, you can input your own reference numbers."
+          },
+          {
+            "title": "Generate master waybills",
+            "desc": "Riders can complete the deliveries while on the road, no need for them to come back to you to update the package status."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "booking-system",
+    "hero": {
+      "head": "Start getting bookings from Day 1",
+      "lead": "As soon as you get started with Airship, your customers can already start booking pickups and deliveries in seconds."
+    },
+    "body": [
+      {
+        "head": "Create packages on their own, in multiple ways",
+        "lead": "Airship includes a ready-to-use, branded booking site where your senders can create their accounts and start shiping.",
+        "list": [
+          {
+            "title": "Book whenever, wherever",
+            "desc": "Senders are usually on the go, senders can now book through their phone or desktop, 24/7!"
+          },
+          {
+            "title": "Upload hundreds of packages at a time",
+            "desc": "If your senders are big time, they would find it surprisingly easy to create package in bulk."
+          },
+          {
+            "title": "Book from a mobile app",
+            "desc": "We took mobile responsive even further by providing an Airship mobile app for your senders, coming soon!"
+          }
+        ]
+      },
+      {
+        "head": "Track all cash activities from their dashboard",
+        "lead": "One of the reasons senders change couriers is losing their clients' money. Airship keeps track of all cash activities with the courier so senders know how much the courier owes them.",
+        "list": [
+          {
+            "title": "View Cash on Delivery's status",
+            "desc": "CODs are precious to the senders in a way that it's the lifeblood of their business. You can now keep senders updated with the status of their CODs."
+          },
+          {
+            "title": "View all transactions in a single page",
+            "desc": "Senders can also view a summary of the fees charged to them and CODs collected - with a sum of who owes who."
+          },
+          {
+            "title": "Preview shipping fees",
+            "desc": "Senders don't need to call you to ask how much, they can just login and check the fees for themselves."
+          }
+        ]
+      },
+      {
+        "head": "Integrate their ecommerce sites straight to you",
+        "lead": "Senders with consistent bookings usually have an ecommerce business, they also have a high turnover rate. Retain your best clients with our integrations.",
+        "list": [
+          {
+            "title": "API Integrations and Webhooks",
+            "desc": "These are the raw materials when building a house. As long as your senders have developers to tap into, they'll be able to integrate ANY system to yours."
+          },
+          {
+            "title": "Ecommerce plugins - just plug and play",
+            "desc": "Some ecommerce sellers use common frameworks like Shopify or Magento to build their shops. With plugins, ecommerce sellers don't need to hire a developer to integrate - just plug and play!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "dispatch-riders",
+    "hero": {
+      "head": "Dispatch packages to your riders like a chess master",
+      "lead": "Dispatch bookings and deliveries to your riders with Airship's intuitive dispatch dashboard."
+    },
+    "body": [
+      {
+        "head": "Assign packages grouped by location",
+        "lead": "View pickups and deliveries in one dashboard, and assign them to your riders simultaneously.",
+        "list": [
+          {
+            "title": "Filter by cities or provinces",
+            "desc": "So you can easily dispatch riders based on the zones that they're assigned to."
+          },
+          {
+            "title": "Packages are grouped by addresses",
+            "desc": "No need to assign one by one, packages are grouped together so you can just concentrate by address."
+          }
+        ]
+      },
+      {
+        "head": "Watch your riders complete deliveries en route",
+        "lead": "Riders update their app every step of the way, allowing you to monitor every rider's activities in one dashboard.",
+        "list": [
+          {
+            "title": "Accept or reject assignments",
+            "desc": "Packages assigned can still be rejected and reassigned to a new rider."
+          },
+          {
+            "title": "Complete tasks",
+            "desc": "Easily mark each task as success or failed delivery."
+          },
+          {
+            "title": "Get proof of delivery",
+            "desc": "Get signatures from the receiver before releasing the deliveries, and get to view them on the dashboard."
+          }
+        ]
+      },
+      {
+        "head": "Equip your riders with papers as a backup",
+        "lead": "Internet can be a unreliable at times, you can still equip your riders with papers and barcodes and just update the system once they return to the hub.",
+        "list": [
+          {
+            "title": "Print run sheets",
+            "desc": "Your team can generate waybills as soon as the packages are created, or senders can print them on their own."
+          },
+          {
+            "title": "Dispatchers can override riders",
+            "desc": "If you don't want to use system-generated waybill numbers,  you can input your own reference numbers."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cash-colleections",
+    "hero": {
+      "head": "Track fees and cash on deliveries to remit to senders",
+      "lead": "View all fees and cash on deliveries collected from riders, and see how much you owe your senders or vice versa."
+    },
+    "body": [
+      {
+        "head": "Easily track fees charged from senders or receivers",
+        "lead": "Airship helps you track shipping fees, COD fees and insurance fees charged by your courier.",
+        "list": [
+          {
+            "title": "Flexible payment methods",
+            "desc": "Senders can either choose to collect the fees from them, from their buyers or charged to their bill."
+          },
+          {
+            "title": "Filter transactions by type",
+            "desc": "View all transactions and filter the transactions by fees, by remittances or by adjustments."
+          }
+        ]
+      },
+      {
+        "head": "Record cash on delivery to collect and to remit",
+        "lead": "Running a courier requires you to track a plethora of small transactions. Airship helps you keep track of all of them.",
+        "list": [
+          {
+            "title": "Receive actual cash collected from riders",
+            "desc": "Tally how much each rider should remit, and how much they actually remitted."
+          },
+          {
+            "title": "View total balance owed to senders",
+            "desc": "Cash collected from CODs shouldn't be added back to your working capital, know how much money you still owe your senders."
+          }
+        ]
+      },
+      {
+        "head": "Send billing statements to your special clients",
+        "lead": "Take better care of your special clients by allowing them to get billed by the end of the billing cycle.",
+        "list": [
+          {
+            "title": "Grant payment terms to your VIPs",
+            "desc": "Special clients can choose to charge the fees to their billing as a 3rd payment option."
+          },
+          {
+            "title": "Export list of packages per sender",
+            "desc": "Save hours of tallying packages successfully delivered by senders. Simply export a list of packages complete with the total fees per package, given a date range."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "flexible-pricing",
+    "hero": {
+      "head": "Turn your small business into a large business",
+      "lead": "Whether you want to operate as different delivery models or to set up branches nationwide, Airship has got your back."
+    },
+    "body": [
+      {
+        "head": "Set your serviceable areas and package types",
+        "lead": "Airship allows you to set which areas you can deliver to, and set types of services per area.",
+        "list": [
+          {
+            "title": "Set serviceable areas",
+            "desc": "Set your serviceable area to a specific city or the whole country."
+          },
+          {
+            "title": "Set package types to offer per area",
+            "desc": "Offer small or large, packages or documents - it's up to you!"
+          },
+          {
+            "title": "Don't accept bookings from outside your areas",
+            "desc": "Airship verifies bookings whether they're inside or outside your serviceable areas."
+          }
+        ]
+      },
+      {
+        "head": "Run your courier as a hub or point-to-point, or both",
+        "lead": "Choose to run your courier similar to DHL or Grab Express; or impress your senders and offer both at the same time.",
+        "list": [
+          {
+            "title": "Charge by weight or by distance",
+            "desc": "Don't technology be your limitation in charging how you want."
+          },
+          {
+            "title": "Auto-calculate chargeable weight",
+            "desc": "Airship automatically calculates if volumetric weight or actual weight is higher."
+          },
+          {
+            "title": "Set your own delivery workflow",
+            "desc": "Hubs are operated differently from point-to-point such that point-to-point has less contact and less checks. Airship allows you to turn these checks on or off."
+          }
+        ]
+      },
+      {
+        "head": "Set flexible pricing for different types of clients",
+        "lead": "Find the right pricing model for your business.",
+        "list": [
+          {
+            "title": "Set tiered or flat shipping fees",
+            "desc": "With Airship's flexible pricing options, find the pricing model that works the best for your courier."
+          },
+          {
+            "title": "Set different COD fees per area",
+            "desc": "Doing COD in different zones pose varying risks. Airship allows you to charge differently per area."
+          },
+          {
+            "title": "Offer special rates to your VIPs",
+            "desc": "Take better care of your VIPs by giving them discounted shipping fees when they book through their own dashboard."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "analytics-and-reports",
+    "hero": {
+      "head": "Track important metrics in one dashboard",
+      "lead": "You can't improve what you don't measure."
+    },
+    "body": [
+      {
+        "head": "Monitor your business' heartbeat",
+        "lead": "With your revenues and packages data within the Airship system,  you can easily monitor your metrics in one dashboard.",
+        "list": [
+          {
+            "title": "Check daily cash collections",
+            "desc": "View your cash collections broken down into cash on deliveries, shipping fees and insurance fees."
+          },
+          {
+            "title": "Take good care of your top senders",
+            "desc": "80% of revenues usually come from the top 20% of clients. Airship shows the top senders of your business that you should focus on."
+          },
+          {
+            "title": "View daily package movement",
+            "desc": "View all your package movement activities in a simplified view."
+          }
+        ]
+      },
+      {
+        "head": "Keep an eye on your riders' performance",
+        "lead": "When riders and drivers make up majority of your manpower, you got to keep your eyes on them.",
+        "list": [
+          {
+            "title": "Reward your top riders",
+            "desc": "Airship calculates which of your riders are performing based on their productivity and accuracy."
+          },
+          {
+            "title": "View performance of each rider",
+            "desc": "Apart from an overview, you can also view which areas the rider is doing well."
+          },
+          {
+            "title": "Rank riders based on reliability",
+            "desc": "Assign more packages to your riders that can be entrusted more."
+          }
+        ]
+      }
+    ]
+  }
+]
