@@ -1,7 +1,7 @@
-import Breadcrumb from "@components/Breadcrumb"
+import FeaturesLayout from "@components/FeaturesLayout"
 
 const TrackAndTrace = () => (
-  <Breadcrumb />
+  <FeaturesLayout />
 )
 
 export default TrackAndTrace

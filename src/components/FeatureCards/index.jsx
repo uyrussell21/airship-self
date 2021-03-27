@@ -10,7 +10,7 @@ const featureList = features["subNavs"].slice(1)
 
 const FeatureCard = ({ isOverview, isActive, title, slug, desc }) => {
   return (
-    <li className={isActive && "active"}>
+    <li className={isActive ? "active" : undefined}>
       {isOverview && <img src={`/static/overview/${slug}.png`} alt={title} />}
       <h3>{title}</h3>
       <p>{desc}</p>
@@ -23,13 +23,13 @@ const FeatureCard = ({ isOverview, isActive, title, slug, desc }) => {
   )
 }
 
-const FeatureCardsList = ({ isOverview, isActive }) => {
+const FeatureCardsList = ({ isOverview }) => {
   const router = useRouter()
   return (
     <ul>
       {featureList.map(({ title, slug, desc }) => {
         const href = `/${parentSlug}/${slug}`
-        if (router.pathname === href) isActive = true
+        const isActive = router.pathname === href ? true : false
         return <FeatureCard key={slug} {...{isOverview, isActive, title, slug, desc}} />
       })}
     </ul>
