@@ -2,9 +2,10 @@
 .features .hero {
   position: relative;
 
-  &::after {
+  &.hero-bg-half::after {
     content: "";
     width: 100%;
+    height: calc(min(18vw, 180px) + 4em);
     position: absolute;
     left: 0;
     bottom: 0;
@@ -12,24 +13,16 @@
     z-index: -1;
   }
 
-  &.hero-bg-half::after {
-    height: calc(min(18vw, 180px) + 4em);
-  }
-
   &.hero-bg-edge {
     padding-bottom: 0;
-
-    &::after {
-      display: none;
-    }
 
     &+ section {
       padding-top: 5em;
     }
   }
 
-  &.hero-bg-full::after {
-    display: none;
+  h1 {
+    max-width: 650px;
   }
 
   p {
@@ -37,8 +30,14 @@
   }
 
   img {
+    margin-top: 3em;
     width: min(90%, 800px);
   }
+  
+  a + img {
+    margin-top: 1em;
+  }
+
 }
 
 // Body

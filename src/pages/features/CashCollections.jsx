@@ -13,7 +13,7 @@ const content = [
 const list = content.map(str => ({desc: str}))
 
 const CashCollections = () => (
-  <FeaturesLayout heroBg="full" heroHasCta>
+  <FeaturesLayout heroHasCta>
     <div>
       <img src="/static/cash-collections/cash-benefits.png" alt="" />
       <div>
