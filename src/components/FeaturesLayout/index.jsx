@@ -2,9 +2,8 @@ import Breadcrumb from "@components/Breadcrumb"
 import { useRouter } from "next/router"
 import features from "@lib/features.json"
 import FeatureCardsSection from "@components/FeatureCards"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCheck } from "@fortawesome/free-solid-svg-icons"
 import Checklist from "@components/Checklist"
+import BodyListItem from "@components/BodyListItem"
 
 const FeaturesHero = ({ head, lead, currSlug, imgSlug, alt }) => (
   <section className="hero">
@@ -15,28 +14,22 @@ const FeaturesHero = ({ head, lead, currSlug, imgSlug, alt }) => (
   </section>
 )
 
-const FeaturesBodyItem = ({ head, lead, list, i, currSlug, imgSlug, alt }) => (
-  <div className="features-body-item container-sm">
-    <img
-      src={`/static/${currSlug}/${imgSlug}-${i + 1}.png`}
-      alt={`${alt} feature ${i + 1} image`}
-    />
-    <div>
-      <h3>{head}</h3>
-      <p>{lead}</p>
-      <Checklist {...{list}} />
-    </div>
-  </div>
+const FeaturesBodyItem = ({ head, lead, list, i, currSlug, imgSlug }) => (
+  <BodyListItem className="features-list-item" {...{head, lead, i, currSlug, imgSlug}}>
+    <Checklist {...{list}} />
+  </BodyListItem>
 )
 
-const FeaturesBody = ({ featureBody, currSlug, imgSlug, alt }) => {
+const FeaturesBody = ({ featureBody, currSlug, imgSlug  }) => {
   return (
     <section className="features-body">
-      {featureBody.map(({head, lead, list}, i) => (
-        <FeaturesBodyItem key={i}
-          {...{head, lead, list, i, currSlug, imgSlug, alt}}
-        />
-      ))}
+      <div className="features-list container-sm">
+        {featureBody.map(({head, lead, list}, i) => (
+          <FeaturesBodyItem key={i}
+            {...{head, lead, list, i, currSlug, imgSlug }}
+          />
+        ))}
+      </div>
     </section>
   )
 }
@@ -55,7 +48,7 @@ const FeaturesLayout = ({ children }) => {
   return (
     <main id={currSlug} className="features">
       <FeaturesHero {...{head, lead, currSlug, imgSlug, alt}} />
-      <FeaturesBody {...{featureBody, currSlug, imgSlug, alt}} />
+      <FeaturesBody {...{featureBody, currSlug, imgSlug}} />
       <section className="features-benefits">
         {children}
       </section>

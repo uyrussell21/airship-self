@@ -1,0 +1,41 @@
+.body-list-item {
+  margin: 5em 0;
+
+  &:first-of-type {margin-top: 0}
+  &:last-of-type {margin-bottom: 0}
+
+  img {
+    width: max(40%, 400px);
+    margin-bottom: 1em;
+  }
+
+  h3 {
+    max-width: 480px;
+  }
+
+  p {
+    max-width: 550px;
+    margin: 1em auto 1.5em;
+  }
+
+  @include breakpoints(lg) {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3em 0;
+
+    img {
+      margin: 0 2em;
+    }
+
+    h3 {
+      margin: 0;
+    }
+
+    p {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}

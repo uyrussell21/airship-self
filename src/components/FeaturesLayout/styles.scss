@@ -1,3 +1,4 @@
+// Hero
 .features .hero {
   position: relative;
 
@@ -21,39 +22,16 @@
   }
 }
 
+// Body
 .features .features-body {
-  padding: 2em 0;
+  padding: 3em 0 5em;
   background: white;
+}
 
-  > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 5em auto;
-
-    &:first-of-type {margin-top: 0;}
-
-    &:last-of-type {margin-bottom: 0;}
-
-    img {
-      width: max(50%, 400px);
-      margin-bottom: 1em;
-    }
-
-    > div {
-      max-width: 600px;
-      width: 90%;
-      margin: auto;
-
-      p {
-        margin: 1em auto 1.5em;
-      }
-    }
-  }
-
+.features .features-list-item {
   ul {
     max-width: 450px;
+    margin: 0 auto;
 
     li {
       &:not(:last-of-type) {
@@ -67,26 +45,12 @@
   }
 
   @include breakpoints(lg) {
-    > div {
-      text-align: left;
-      margin: 2em auto;
-      flex-direction: row;
-
-      img {
-        margin: 0;
-      }
-
-      &:nth-of-type(2n+1) {
-        flex-direction: row-reverse;
-
-        img {
-          margin-left: 2em;
-        }
-      }
-
-      &:nth-of-type(2n) img {
-        margin-right: 2em;
-      }
+    &:nth-of-type(2n+1) {
+      flex-direction: row-reverse;
+    }
+    
+    ul {
+      margin: 0;
     }
   }
 }

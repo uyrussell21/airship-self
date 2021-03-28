@@ -37,7 +37,7 @@ const FeatureCardsList = ({ isOverview }) => {
 }
 
 const FeatureCardsSection = ({ isOverview, className }) => (
-  <section className={`features-list ${className || ""}`}>
+  <section className={`features-cards ${className || ""}`}>
     {isOverview
       ? <h2 className="overview">Set your business <strong>for success</strong> right from the start</h2>
       : <h2>Learn about other Airship features</h2>
