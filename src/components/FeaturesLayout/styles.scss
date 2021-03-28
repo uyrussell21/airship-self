@@ -1,0 +1,92 @@
+.features .hero {
+  position: relative;
+
+  &::after {
+    content: "";
+    height: calc(min(18vw, 180px) + 4em);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: -1;
+  }
+
+  p {
+    max-width: 630px;
+  }
+
+  img {
+    width: min(90%, 800px);
+  }
+}
+
+.features .features-body {
+  padding: 2em 0;
+  background: white;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5em auto;
+
+    &:first-of-type {margin-top: 0;}
+
+    &:last-of-type {margin-bottom: 0;}
+
+    img {
+      width: max(50%, 400px);
+      margin-bottom: 1em;
+    }
+
+    > div {
+      max-width: 600px;
+      width: 90%;
+      margin: auto;
+
+      p {
+        margin: 1em auto 1.5em;
+      }
+    }
+  }
+
+  ul {
+    max-width: 450px;
+
+    li {
+      &:not(:last-of-type) {
+        margin-bottom: 15px;
+      }
+
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+
+  @include breakpoints(lg) {
+    > div {
+      text-align: left;
+      margin: 2em auto;
+      flex-direction: row;
+
+      img {
+        margin: 0;
+      }
+
+      &:nth-of-type(2n+1) {
+        flex-direction: row-reverse;
+
+        img {
+          margin-left: 2em;
+        }
+      }
+
+      &:nth-of-type(2n) img {
+        margin-right: 2em;
+      }
+    }
+  }
+}

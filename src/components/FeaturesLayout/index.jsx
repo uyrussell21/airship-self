@@ -2,6 +2,9 @@ import Breadcrumb from "@components/Breadcrumb"
 import { useRouter } from "next/router"
 import features from "@lib/features.json"
 import FeatureCardsSection from "@components/FeatureCards"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCheck } from "@fortawesome/free-solid-svg-icons"
+import Checklist from "@components/Checklist"
 
 const FeaturesHero = ({ head, lead, currSlug, imgSlug, alt }) => (
   <section className="hero">
@@ -12,12 +15,8 @@ const FeaturesHero = ({ head, lead, currSlug, imgSlug, alt }) => (
   </section>
 )
 
-const FeaturesChecklistItem = ({ title, desc }) => (
-    <li><span>{title}:</span> {desc}</li>
-)
-
 const FeaturesBodyItem = ({ head, lead, list, i, currSlug, imgSlug, alt }) => (
-  <div>
+  <div className="features-body-item container-sm">
     <img
       src={`/static/${currSlug}/${imgSlug}-${i + 1}.png`}
       alt={`${alt} feature ${i + 1} image`}
@@ -25,11 +24,7 @@ const FeaturesBodyItem = ({ head, lead, list, i, currSlug, imgSlug, alt }) => (
     <div>
       <h3>{head}</h3>
       <p>{lead}</p>
-      <ul className="checklist">
-        {list.map(({title, desc}) => (
-          <FeaturesChecklistItem key={title} {...{title, desc}} />
-        ))}
-      </ul>
+      <Checklist {...{list}} />
     </div>
   </div>
 )
@@ -58,7 +53,7 @@ const FeaturesLayout = ({ children }) => {
   const alt = slugSplit.join(" ")
 
   return (
-    <main id={currSlug} className="feature">
+    <main id={currSlug} className="features">
       <FeaturesHero {...{head, lead, currSlug, imgSlug, alt}} />
       <FeaturesBody {...{featureBody, currSlug, imgSlug, alt}} />
       <section className="features-benefits">

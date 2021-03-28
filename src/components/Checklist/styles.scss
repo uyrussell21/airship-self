@@ -1,0 +1,18 @@
+ul.checklist {
+  text-align: left;
+
+  li {
+    $check-offset: 2em;
+    position: relative;
+    margin-left: $check-offset;
+    color: var(--dark-grey);
+
+    svg {
+      position: absolute;
+      top: 0;
+      left: -$check-offset;
+      margin-top: 3px;
+      color: #2ecc71;
+    }
+  }
+}

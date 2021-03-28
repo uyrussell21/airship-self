@@ -1,6 +1,6 @@
 #overview .hero {
   img {
-    width: 500px;
+    width: max(50%, 500px);
   }
 
   @include breakpoints(lg) {
@@ -11,10 +11,6 @@
 
     p {
       margin-bottom: 0;
-    }
-
-    img {
-      width: 50%;
     }
   }
 }
