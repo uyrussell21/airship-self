@@ -54,7 +54,7 @@
   }
 }
 
-#home .why-list-item {
+#home .body-list-item {
   &:nth-of-type(2n) {
     flex-direction: row-reverse;
   }
@@ -77,7 +77,7 @@
       color: var(--quote-cite);
     }
   }
-  
+
   @include breakpoints(lg) {
     figure {
       margin: 0;

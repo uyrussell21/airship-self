@@ -26,9 +26,24 @@
 .features .features-body {
   padding: 3em 0 5em;
   background: white;
+
+  h2 {
+    padding: 0 12px;
+    margin-bottom: 1em;
+  }
+
+  .pathImg {
+    display: none;
+    &:first-of-type {transform: translateX(100px);}
+  }
+
+  @include breakpoints(lg) {
+    .pathImg {display: block;}
+    .pathImg + .body-list-item {margin: 0;}
+  }
 }
 
-.features .features-list-item {
+.features .body-list-item {
   ul {
     max-width: 450px;
     margin: 0 auto;

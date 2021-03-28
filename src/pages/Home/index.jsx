@@ -48,7 +48,7 @@ const Hero = () => (
 )
 
 const WhyAirshipItem = ({ i, head, lead, quote, cite }) => (
-  <BodyListItem className="why-list-item" {...{i, head, lead}}>
+  <BodyListItem {...{i, head, lead}}>
     <figure>
       <blockquote dangerouslySetInnerHTML={quote} />
       <figcaption>- {cite}</figcaption>

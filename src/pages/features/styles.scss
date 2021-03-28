@@ -1,3 +1,4 @@
+// General Benefits styles
 .features-benefits {
   padding: 0 clamp(12px, 3vw, 60px);
   position: relative;
@@ -39,7 +40,7 @@
   }
 
   ul {
-    margin: 1em auto;
+    margin: 1.5em auto;
   }
 
   ul.checklist {
@@ -53,10 +54,11 @@
   }
 
   .cta-btn {
-    margin: 1em 0 0;
+    margin-top: 1em;
   }
 }
 
+// Track and Trace
 #track-and-trace .features-benefits {
   h2 {
     font-size: var(--size-h1);
@@ -66,6 +68,26 @@
     ul.checklist {
       grid-template-rows: repeat(4, 1fr);
       column-gap: 50px;
+    }
+  }
+}
+
+// Booking System
+#booking-system .features-benefits {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 1em;
+    row-gap: 0.5em;
+
+    li {
+      max-width: 170px;
+      width: 40%;
+    }
+
+    img {
+      max-width: 60%;
     }
   }
 }
