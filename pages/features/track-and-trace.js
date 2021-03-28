@@ -1,7 +1,7 @@
-import TrackAndTrace from "@pages/TrackAndTrace"
+import TrackAndTrace from "@pages/features/TrackAndTrace.jsx"
 
-const TrackPage = () => (
+const TrackAndTracePage = () => (
   <TrackAndTrace />
 )
 
-export default TrackPage
+export default TrackAndTracePage
