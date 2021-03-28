@@ -23,9 +23,9 @@ const BookingSystem = () => (
     <div>
       <h2>Your senders don't need to call you for every single, tiny, thing ~ <strong className="blue">All you need is Airship</strong></h2>
       <ul>
-        {content.map(([title, slug]) => (
-          <li key={slug}>
-            <img src={`/static/booking-system/booking-icons-${slug}.png`} alt={title}/>
+        {content.map(([title, imgSlug]) => (
+          <li key={imgSlug}>
+            <img src={`/static/booking-system/booking-icons-${imgSlug}.png`} alt={title}/>
             <p>{title}</p>
           </li>
         ))}

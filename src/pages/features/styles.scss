@@ -140,3 +140,27 @@
     }
   }
 }
+
+// Cash Collections
+#cash-collections .features-benefits > div {
+  img {
+    width: 50%;
+  }
+
+  @include breakpoints(lg) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+
+    img {
+      margin-left: 2em;
+    }
+
+    ul.checklist {
+      grid-template-columns: unset;
+      grid-auto-flow: unset;
+    }
+  }
+}

@@ -5,12 +5,14 @@ import FeatureCardsSection from "@components/FeatureCards"
 import Checklist from "@components/Checklist"
 import BodyListItem from "@components/BodyListItem"
 import { Fragment } from "react"
+import CtaButton from "@components/CtaButton"
 
-const FeaturesHero = ({ head, lead, currSlug, imgSlug, alt, heroBg }) => (
+const FeaturesHero = ({ head, lead, currSlug, imgSlug, alt, heroBg, heroHasCta }) => (
   <section className={`hero ${heroBg ? `hero-bg-${heroBg}` : ""}`}>
     <Breadcrumb />
     <h1>{head}</h1>
     <p>{lead}</p>
+    {heroHasCta && <CtaButton className="alt red" />}
     <img src={`/static/${currSlug}/${imgSlug}-hero.png`} alt={`${alt} hero image`}/>
   </section>
 )
@@ -41,7 +43,7 @@ const FeaturesBody = ({ featureBody, currSlug, imgSlug, bodyHead, hasPaths }) =>
   )
 }
 
-const FeaturesLayout = ({ bodyHead, hasPaths, heroBg, children }) => {
+const FeaturesLayout = ({ bodyHead, hasPaths, heroHasCta, heroBg, children }) => {
   const router = useRouter()
   const currSlug = router.pathname.split("/").slice(-1)[0]
   const featureData = features.find(({slug}) => slug.match(currSlug))
@@ -54,7 +56,7 @@ const FeaturesLayout = ({ bodyHead, hasPaths, heroBg, children }) => {
 
   return (
     <main id={currSlug} className="features">
-      <FeaturesHero {...{head, lead, currSlug, imgSlug, alt, heroBg}} />
+      <FeaturesHero {...{head, lead, currSlug, imgSlug, alt, heroBg, heroHasCta}} />
       <FeaturesBody {...{featureBody, currSlug, imgSlug, bodyHead, hasPaths}} />
       <section className="features-benefits">
         {children}

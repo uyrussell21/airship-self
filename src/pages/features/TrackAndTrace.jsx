@@ -13,9 +13,7 @@ const content = [
   "Save on encoders"
 ]
 
-const list = content.map(str => (
-  {desc: str}
-))
+const list = content.map(str => ({desc: str}))
 
 const TrackAndTrace = () => (
   <FeaturesLayout heroBg="half">
