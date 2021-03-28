@@ -18,7 +18,7 @@ const list = content.map(str => (
 ))
 
 const TrackAndTrace = () => (
-  <FeaturesLayout>
+  <FeaturesLayout heroBg="half">
     <div>
       <h2>Every package can <strong>make or break</strong> your business</h2>
       <p>Here are the benefits of having track and trace in your courier business</p>

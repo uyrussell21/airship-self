@@ -19,7 +19,7 @@ const content = [
 ]
 
 const BookingSystem = () => (
-  <FeaturesLayout {...{bodyHead}} hasPaths>
+  <FeaturesLayout {...{bodyHead}} hasPaths heroBg="half">
     <div>
       <h2>Your senders don't need to call you for every single, tiny, thing ~ <strong className="blue">All you need is Airship</strong></h2>
       <ul>

@@ -6,8 +6,8 @@ import Checklist from "@components/Checklist"
 import BodyListItem from "@components/BodyListItem"
 import { Fragment } from "react"
 
-const FeaturesHero = ({ head, lead, currSlug, imgSlug, alt }) => (
-  <section className="hero">
+const FeaturesHero = ({ head, lead, currSlug, imgSlug, alt, heroBg }) => (
+  <section className={`hero ${heroBg ? `hero-bg-${heroBg}` : ""}`}>
     <Breadcrumb />
     <h1>{head}</h1>
     <p>{lead}</p>
@@ -41,7 +41,7 @@ const FeaturesBody = ({ featureBody, currSlug, imgSlug, bodyHead, hasPaths }) =>
   )
 }
 
-const FeaturesLayout = ({ bodyHead, hasPaths, children }) => {
+const FeaturesLayout = ({ bodyHead, hasPaths, heroBg, children }) => {
   const router = useRouter()
   const currSlug = router.pathname.split("/").slice(-1)[0]
   const featureData = features.find(({slug}) => slug.match(currSlug))
@@ -54,7 +54,7 @@ const FeaturesLayout = ({ bodyHead, hasPaths, children }) => {
 
   return (
     <main id={currSlug} className="features">
-      <FeaturesHero {...{head, lead, currSlug, imgSlug, alt}} />
+      <FeaturesHero {...{head, lead, currSlug, imgSlug, alt, heroBg}} />
       <FeaturesBody {...{featureBody, currSlug, imgSlug, bodyHead, hasPaths}} />
       <section className="features-benefits">
         {children}

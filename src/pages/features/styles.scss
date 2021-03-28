@@ -1,6 +1,10 @@
 // General Benefits styles
 .features-benefits {
-  padding: 0 clamp(12px, 3vw, 60px);
+  --section-pady: clamp(12px, 3vw, 60px);
+  --border-rad: 15px;
+  --box-shad: 0 2px 8px 8px rgba(0, 0, 0, 0.1);
+
+  padding: 0 var(--section-pady);
   position: relative;
 
   &::before {
@@ -20,8 +24,8 @@
     max-width: 1300px;
     margin: 0 auto;
     padding: clamp(18px, 5vw, 60px);
-    border-radius: 15px;
-    box-shadow: 0 2px 8px 8px rgba(0, 0, 0, 0.1);
+    border-radius: var(--border-rad);
+    box-shadow: var(--box-shad);
   }
 
   h2 {
@@ -34,7 +38,7 @@
 
   h2 + p {
     font-size: var(--size-body-lg);
-    color: var(--lighter-grey);
+    color: var(--light-grey);
     max-width: 500px;
     margin: 0.5em auto 1.5em;
   }
@@ -45,11 +49,15 @@
 
   ul.checklist {
     display: grid;
-    grid-auto-flow: column;
-    grid-row-gap: 0.5em;
+    row-gap: 0.5em;
 
     li {
       font-size: var(--size-body-lg);
+    }
+
+    @include breakpoints(lg) {
+      grid-auto-flow: column;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
@@ -79,7 +87,7 @@
     flex-wrap: wrap;
     justify-content: center;
     column-gap: 1em;
-    row-gap: 0.5em;
+    row-gap: 1.5em;
 
     li {
       max-width: 170px;
@@ -88,6 +96,47 @@
 
     img {
       max-width: 60%;
+    }
+  }
+}
+
+// Dispatch Riders
+#dispatch-riders .features-benefits {
+  padding: 0;
+
+  > div {
+    box-shadow: unset;
+    border-radius: 0;
+    background-image: url("/static/dispatch-riders/dispatch-map-bg.png");
+    background-size: cover;
+    background-position: left;
+    padding: 5em var(--section-pady) 3em;
+
+    div {
+      margin: 0 auto;
+      max-width: 620px;
+      padding: clamp(1em, 5vw, 3em);
+      border-radius: 10px;
+      box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.2);
+      background: #fff;
+    }
+  }
+
+  @include breakpoints(lg) {
+    padding: 0 var(--section-pady);
+
+    > div {
+      border-radius: var(--border-rad);
+      box-shadow: var(--box-shad);
+
+      div {
+        margin: 0;
+        text-align: left;
+      }
+
+      p {
+        margin: 1em 0;
+      }
     }
   }
 }

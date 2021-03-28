@@ -4,13 +4,32 @@
 
   &::after {
     content: "";
-    height: calc(min(18vw, 180px) + 4em);
     width: 100%;
     position: absolute;
     left: 0;
     bottom: 0;
     background: #fff;
     z-index: -1;
+  }
+
+  &.hero-bg-half::after {
+    height: calc(min(18vw, 180px) + 4em);
+  }
+
+  &.hero-bg-edge {
+    padding-bottom: 0;
+
+    &::after {
+      display: none;
+    }
+
+    &+ section {
+      padding-top: 5em;
+    }
+  }
+
+  &.hero-bg-full::after {
+    display: none;
   }
 
   p {
