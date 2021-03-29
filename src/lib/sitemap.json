@@ -2,54 +2,175 @@
   {
     "title": "Features",
     "slug": "features",
+    "meta": {
+      "desc": "",
+      "og": {
+        "img": ""
+      },
+      "twitter": {
+        "img": "",
+        "card": "optional: magiging summary card ito kapag may og:title, og:desc and og:type"
+      },
+      "keywords": []
+    },
     "subNavs": [
       {
         "title": "Feature Overview",
         "slug": "feature-overview",
-        "desc": "Grow your courier business by making the shift to Airship"
+        "desc": "Grow your courier business by making the shift to Airship",
+        "meta": {
+          "desc": "",
+          "og": {
+            "img": ""
+          },
+          "twitter": {
+            "img": "",
+            "card": "optional: magiging summary card ito kapag may og:title, og:desc and og:type"
+          },
+          "keywords": []
+        }
       },
       {
         "title": "Track and Trace",
         "slug": "track-and-trace",
-        "desc": "Track your packages every step of the way, in real-time"
+        "desc": "Track your packages every step of the way, in real-time",
+        "meta": {
+          "desc": "",
+          "og": {
+            "img": ""
+          },
+          "twitter": {
+            "img": "",
+            "card": "optional: magiging summary card ito kapag may og:title, og:desc and og:type"
+          },
+          "keywords": []
+        }
       },
       {
         "title": "Booking System",
         "slug": "booking-system",
-        "desc": "Let your customers book and track on their own"
+        "desc": "Let your customers book and track on their own",
+        "meta": {
+          "desc": "",
+          "og": {
+            "img": ""
+          },
+          "twitter": {
+            "img": "",
+            "card": "optional: magiging summary card ito kapag may og:title, og:desc and og:type"
+          },
+          "keywords": []
+        }
       },
       {
         "title": "Dispatch Riders",
         "slug": "dispatch-riders",
-        "desc": "Assign bookings and packages to your riders"
+        "desc": "Assign bookings and packages to your riders",
+        "meta": {
+          "desc": "",
+          "og": {
+            "img": ""
+          },
+          "twitter": {
+            "img": "",
+            "card": "optional: magiging summary card ito kapag may og:title, og:desc and og:type"
+          },
+          "keywords": []
+        }
       },
       {
         "title": "Cash Collections",
         "slug": "cash-collections",
-        "desc": "Track cash movements on pickups and deliveries"
+        "desc": "Track cash movements on pickups and deliveries",
+        "meta": {
+          "desc": "",
+          "og": {
+            "img": ""
+          },
+          "twitter": {
+            "img": "",
+            "card": "optional: magiging summary card ito kapag may og:title, og:desc and og:type"
+          },
+          "keywords": []
+        }
       },
       {
         "title": "Flexible Pricing",
         "slug": "flexible-pricing",
-        "desc": "Be flexible with your services and pricing"
+        "desc": "Be flexible with your services and pricing",
+        "meta": {
+          "desc": "",
+          "og": {
+            "img": ""
+          },
+          "twitter": {
+            "img": "",
+            "card": "optional: magiging summary card ito kapag may og:title, og:desc and og:type"
+          },
+          "keywords": []
+        }
       },
       {
         "title": "Analytics and Reports",
         "slug": "analytics-and-reports",
-        "desc": "Stay on top of your business with metrics"
+        "desc": "Stay on top of your business with metrics",
+        "meta": {
+          "desc": "",
+          "og": {
+            "img": ""
+          },
+          "twitter": {
+            "img": "",
+            "card": "optional: magiging summary card ito kapag may og:title, og:desc and og:type"
+          },
+          "keywords": []
+        }
       }
     ]
   },
   {
     "title": "Pricing",
-    "slug": "pricing"
+    "slug": "pricing",
+    "meta": {
+      "desc": "",
+      "og": {
+        "img": ""
+      },
+      "twitter": {
+        "img": "",
+        "card": "optional: magiging summary card ito kapag may og:title, og:desc and og:type"
+      },
+      "keywords": []
+    }
   },
   {
     "title": "Blog",
-    "slug": "blog"
+    "slug": "blog",
+    "meta": {
+      "desc": "",
+      "og": {
+        "img": ""
+      },
+      "twitter": {
+        "img": "",
+        "card": "optional: magiging summary card ito kapag may og:title, og:desc and og:type"
+      },
+      "keywords": []
+    }
   },
   {
     "title": "About",
-    "slug": "about"
+    "slug": "about",
+    "meta": {
+      "desc": "",
+      "og": {
+        "img": ""
+      },
+      "twitter": {
+        "img": "",
+        "card": "optional: magiging summary card ito kapag may og:title, og:desc and og:type"
+      },
+      "keywords": []
+    }
   }
 ]

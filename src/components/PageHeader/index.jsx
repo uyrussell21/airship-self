@@ -3,8 +3,9 @@ import ContactPhone from "@components/ContactPhone"
 import CtaButton from "@components/CtaButton"
 import NavDropdown from "@components/NavDropdown"
 import Link from "next/link"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import sitemap from "@lib/sitemap.json"
+import { useRouter } from "next/router"
 
 const TopBar = () => (
   <address>
@@ -31,17 +32,27 @@ const Hamburger = ({ toggleHamMenu, target, isHamOpen }) => {
 }
 
 const NavBar = () => {
-  const [isHamOpen, setIsActive] = useState(false)
-  
+  const [isHamOpen, setIsHamOpen] = useState(false)
   const [currentNavOpen, setCurrentNavOpen] = useState(null);
+  const router = useRouter()
 
   const toggleHamMenu = () => {
-    setIsActive(!isHamOpen)
+    setIsHamOpen(!isHamOpen)
   }
 
   const toggleSubNav = (currentNav) => {
     setCurrentNavOpen(currentNavOpen === currentNav ? null : currentNav)
   }
+
+  useEffect(() => {
+    const closeNav = () => {
+      setIsHamOpen(false)
+      setCurrentNavOpen(null)
+    }
+
+    router.events.on('routeChangeComplete', closeNav)
+    return () => {router.events.off('routeChangeComplete', closeNav)}
+  }, [])
 
   return (
     <nav className={`container-sm ${isHamOpen ? "active" : ""}`}>

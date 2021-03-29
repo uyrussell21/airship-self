@@ -12,7 +12,7 @@ ul.sub-nav {
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background: #fff;
   border-bottom: solid 2px var(--quote-border);
@@ -37,7 +37,7 @@ ul.sub-nav {
     grid-template-columns: clamp(35px, 10vw, 75px) 1fr;
     grid-gap: 10px;
     padding: 5px 20px;
-    max-width: 350px;
+    
     align-items: center;
 
     &:hover, &:focus {
@@ -73,6 +73,7 @@ ul.sub-nav {
 
   @include breakpoints(lg) {
     position: absolute;
+    justify-content: center;
     top: 100%;
     left: 0;
     right: 0;
@@ -80,6 +81,7 @@ ul.sub-nav {
 
     a {
       margin: 20px;
+      max-width: 350px;
     }
   }
 }
