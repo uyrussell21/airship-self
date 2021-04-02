@@ -1,0 +1,180 @@
+#about {
+  section:nth-of-type(2n) {
+    background-color: var(--bg-grey);
+  }
+
+  h2 {
+    font-size: var(--size-h1);
+    margin-bottom: 1em;
+  }
+
+  h3 {
+    font-size: var(--size-body-lg);
+  }
+
+  p {
+    text-align: left;
+    margin-top: 1em;
+  }
+
+  @include breakpoints(lg) {
+    section:not(.hero) {
+      text-align: left;
+
+      img {
+        margin: 0;
+      }
+    }
+
+    h2 {
+      margin: 0;
+    }
+  }
+}
+
+// Hero Section
+#about .hero {
+  h1, p {
+    max-width: 900px;
+  }
+
+  p {
+    font-size: var(--size-body-lg);
+    text-align: center;
+  }
+}
+
+// Our * sections
+#about .our {
+  padding: 4em 0;
+  
+  @include breakpoints(lg) {
+    > div {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 2em;
+    }
+  }
+}
+
+// Our Story Section
+#about .story {
+  h3 {
+    color: var(--bright-blue);
+    font-weight: bold;
+    margin: 3em 0 1.2em;
+  }
+
+  p {
+    margin-bottom: 1em;
+    max-width: 600px;
+  }
+
+  .video-box {
+    position: relative;
+    max-width: 800px;
+    
+    &::before {
+      content: "";
+      display: block;
+      padding-top: calc(9/16 * 100%);
+    }
+
+    iframe {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @include breakpoints(lg) {
+    h3 {
+      margin-left: 0;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+
+    p {
+      margin-left: 0;
+    }
+  }
+}
+
+// Our Values Section
+#about .values {
+  img {
+    margin-bottom: 2em;
+  }
+
+  .values-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    column-gap: 2em;
+    row-gap: 2em;
+
+    div {
+      max-width: 360px;
+      text-align: center;
+    }
+  }
+
+  @include breakpoints(sm) {
+    > div > div:first-of-type {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .values-list {
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-flow: column;
+      justify-items: start;
+      grid-template-rows: repeat(3, 1fr);
+  
+      h3 {
+        text-align: left;
+      }
+    }
+  }
+}
+
+#about .life {
+  padding: 5em 0;
+
+  img {
+    width: 90%;
+    border-radius: 5px;
+    box-shadow:
+      -2em -2em 0 0 var(--bright-blue),
+      3px 3px 5px 0 rgba(0, 0, 0, 0.25);
+  }
+  
+  @include breakpoints(lg) {
+    h2 {
+      align-self: flex-end;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    > div {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr 2fr;
+      column-gap: 2em;
+      row-gap: 1em;
+
+      img {
+        justify-self: flex-end;
+        grid-column-start: 2;
+        grid-row: 1 / span 2;
+      }
+    }
+  }
+}
