@@ -6,10 +6,7 @@ const pricingContent = [
   {
     head: "Standard",
     lead: "start-up business",
-    price: {
-      head: "15,000",
-      lead: {__html: "includes 3,500 packages<br />+ Php 300 / 100 packages in excess"}
-    },
+    price: "15,000",
     list: [
       {
         head: "Platforms",
@@ -37,10 +34,7 @@ const pricingContent = [
   {
     head: "Premium",
     lead: "growing business",
-    price: {
-      head: "25,000",
-      lead: {__html: "includes 3,500 packages<br />+ Php 300 / 100 packages in excess"}
-    },
+    price: "25,000",
     list: [
       {
         head: "Everything in Standard, plus...",
@@ -162,30 +156,35 @@ const faqContent = [
   }
 ]
 
-const PricingCard = ({ head, lead, price, list, i }) => {
+const PricingCard = ({ head, lead, price, list }) => {
   let cta = <CtaButton className="blue alt" >Schedule a Call</CtaButton>
   if (price) {
-    const {head: priceHead, lead: priceLead} = price
     cta = (
       <>
-        <p><span>Php {priceHead}</span> / mo</p>
-        <p dangerouslySetInnerHTML={priceLead} />
+        <p class="price"><span>Php {price}</span> / mo</p>
+        <p>includes 3,500 packages</p>
+        <p>+ Php 300 / 100 packages in excess</p>
       </>
     )
   }
 
   return (
-    <div>
-      <div>
-        <h3>{head}</h3>
-        <p>{lead}</p>
-        <img
-          src={`/static/pricing/pricing-${i + 1}.png`}
-          alt={`Pricing Graphic ${i + 1}`}
-        />
-        {cta}
+    <div className="pricing-card">
+      <div className="plan">
+        <div>
+          <h3>{head}</h3>
+          <p>{lead}</p>
+          <img
+            src={`/static/pricing/pricing-${head.toLowerCase()}.png`}
+            alt={`${head} plan graphic`}
+          />
+        </div>
+        <div>
+          {cta}
+        </div>
       </div>
-      <div>
+
+      <div className="offers">
         {list.map(({head, content}) => {
           const list = content.map(str => ({desc: str}))
           return (
@@ -201,43 +200,51 @@ const PricingCard = ({ head, lead, price, list, i }) => {
 }
 
 const PricingSection = () => (
-  <section>
+  <section className="container-sm">
     <h1>The power of all platforms for the price of one</h1>
     <p>No matter where you are in your journey as a courier, we have a pricing plan for you.</p>
     
-    <div>
-      {pricingContent.map(({head, lead, price, list}, i) => (
-        <PricingCard {...{head, lead, price, list, i}} />
+    <div className="pricing-cards">
+      {pricingContent.map(({head, lead, price, list}) => (
+        <PricingCard {...{head, lead, price, list}} />
       ))}
     </div>
-
   </section>
 )
 
 const YouGet = () => (
-  <section>
-    <h2>That's not all, with Airship you get</h2>
-    {youGetContent.map(({head, lead, slug}) => (
-      <div>
-        <img src={`/static/pricing/pricing-${slug}.png`} alt={`${slug} graphic`} />
-        <h3>{head}</h3>
-        <p>{lead}</p>
+  <section className="you-get">
+    <div className="container-sm">
+      <h2>That's not all, with Airship you get</h2>
+      <div className="benefits">
+        {youGetContent.map(({head, lead, slug}) => (
+          <div>
+            <img src={`/static/pricing/pricing-${slug}.png`} alt={`${slug} graphic`} />
+            <h3>{head}</h3>
+            <p>{lead}</p>
+          </div>
+        ))}
       </div>
-    ))}
+    </div>
   </section>
 )
 
 const Faq = () => (
-  <section>
-    {faqContent.map(({head, content}) => (
-      <>
-        <h3>{head}</h3>
-        {content.map(item => {
-          if (item["__html"]) return <p dangerouslySetInnerHTML={item} />
-          return <p>{item}</p>
-        })}
-      </>
-    ))}
+  <section className="faq wavy-border">
+    <div className="container-sm">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-body">
+        {faqContent.map(({head, content}) => (
+          <div>
+            <h3>{head}</h3>
+            {content.map(item => {
+              if (item["__html"]) return <p dangerouslySetInnerHTML={item} />
+              return <p>{item}</p>
+            })}
+          </div>
+        ))}
+      </div>
+    </div>
   </section>
 )
 

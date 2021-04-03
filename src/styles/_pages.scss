@@ -13,6 +13,10 @@
   }
 }
 
+section {
+  padding: 4em 0;
+}
+
 .wavy-border {
   @include wavy-border;
 }
