@@ -8,15 +8,9 @@
         "slug": "feature-overview",
         "desc": "Grow your courier business by making the shift to Airship",
         "meta": {
-          "title": "Courier Tracking and Delivery Software - Airship Logistics",
+          "title": "Courier Tracking and Delivery Software",
           "desc": "The only software you'll need to run your courier business - we got you covered from your bookings to managing your senders, agents, riders and cash.",
-          "og": {
-            "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
-          },
-          "twitter": {
-            "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg",
-            "card": "optional: magiging summary card ito kapag may og:title, og:desc and og:type"
-          }
+          "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
         }
       },
       {
@@ -24,15 +18,8 @@
         "slug": "track-and-trace",
         "desc": "Track your packages every step of the way, in real-time",
         "meta": {
-          "title": "Track and Trace - Airship Logistics",
           "desc": "Track packages real-time as your riders and agents update the system through mobile app and web app. Airship covers your workflow from first mile to last mile.",
-          "og": {
-            "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
-          },
-          "twitter": {
-            "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg",
-            "card": "optional: magiging summary card ito kapag may og:title, og:desc and og:type"
-          }
+          "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
         }
       },
       {
@@ -40,15 +27,9 @@
         "slug": "booking-system",
         "desc": "Let your customers book and track on their own",
         "meta": {
-          "title": "Branded Booking Site for Senders - Airship Logistics",
+          "title": "Branded Booking Site for Senders",
           "desc": "Airship offers a booking system where your senders can easily book pickups and deliveries, bulk upload their packages and track packages in real time.",
-          "og": {
-            "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
-          },
-          "twitter": {
-            "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg",
-            "card": "optional: magiging summary card ito kapag may og:title, og:desc and og:type"
-          }
+          "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
         }
       },
       {
@@ -56,15 +37,9 @@
         "slug": "dispatch-riders",
         "desc": "Assign bookings and packages to your riders",
         "meta": {
-          "title": "Dispatch System and Proof of Delivery - Airship Logistics",
+          "title": "Dispatch System and Proof of Delivery",
           "desc": "Dispatch your bookings and deliveries easily to your agents and riders, in just a matter of seconds with Airship's dispatch dashboard.",
-          "og": {
-            "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
-          },
-          "twitter": {
-            "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg",
-            "card": "optional: magiging summary card ito kapag may og:title, og:desc and og:type"
-          }
+          "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
         }
       },
       {
@@ -72,15 +47,9 @@
         "slug": "cash-collections",
         "desc": "Track cash movements on pickups and deliveries",
         "meta": {
-          "title": "Cash Management - Airship Logistics",
+          "title": "Cash Management",
           "desc": "Keep track of all your courier transactions - shipping fees, insurance fees, cash on delivery fees, etc. Offer flexible payment methods to your senders.",
-          "og": {
-            "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
-          },
-          "twitter": {
-            "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg",
-            "card": "optional: magiging summary card ito kapag may og:title, og:desc and og:type"
-          }
+          "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
         }
       },
       {
@@ -88,15 +57,9 @@
         "slug": "flexible-pricing",
         "desc": "Be flexible with your services and pricing",
         "meta": {
-          "title": "Expand your Courier Business - Airship Logistics",
+          "title": "Expand your Courier Business",
           "desc": "Reach your full potential! Airship supports multiple delivery models, and allows you to expand from your single hub to multiple hubs across the nation.",
-          "og": {
-            "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
-          },
-          "twitter": {
-            "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg",
-            "card": "optional: magiging summary card ito kapag may og:title, og:desc and og:type"
-          }
+          "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
         }
       },
       {
@@ -104,15 +67,9 @@
         "slug": "analytics-and-reports",
         "desc": "Stay on top of your business with metrics",
         "meta": {
-          "title": "Analytics and Reports - Airship Logistics",
+          "title": "Analytics and Reports",
           "desc": "Monitor your business levers through a single metric dashboard. Export reports and keep track of your top agents and riders, and top senders.",
-          "og": {
-            "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
-          },
-          "twitter": {
-            "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg",
-            "card": "optional: magiging summary card ito kapag may og:title, og:desc and og:type"
-          }
+          "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
         }
       }
     ]
@@ -121,15 +78,9 @@
     "title": "Pricing",
     "slug": "pricing",
     "meta": {
-      "title": "Pricing - All-in-one Pricing - Airship Logistics",
+      "title": "Pricing - All-in-one Pricing",
       "desc": "Airship offers a simple pricing that grows with you as you grow. Our basic plan already includes all platforms you need to start running your courier business.",
-      "og": {
-        "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
-      },
-      "twitter": {
-        "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg",
-        "card": "optional: magiging summary card ito kapag may og:title, og:desc and og:type"
-      }
+      "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
     }
   },
   {
@@ -138,43 +89,34 @@
     "meta": {
       "title": "",
       "desc": "",
-      "og": {
-        "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
-      },
-      "twitter": {
-        "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg",
-        "card": "optional: magiging summary card ito kapag may og:title, og:desc and og:type"
-      }
+      "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
     }
   },
   {
-    "title": "About",
+    "title": "About Us",
     "slug": "about",
     "meta": {
-      "title": "About - Get to Know Us - AIrship Logistics",
+      "title": "About - Get to Know Us",
       "desc": "Discover how Airship came about, from its humble beginnings as a web development agency all the way to a software built for couriers.",
-      "og": {
-        "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
-      },
-      "twitter": {
-        "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg",
-        "card": "optional: magiging summary card ito kapag may og:title, og:desc and og:type"
-      }
+      "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
     }
   },
   {
     "title": "Home",
     "slug": "",
     "meta": {
-      "title": "Courier Tracking and Delivery Software - Airship Logistics",
+      "title": "Courier Tracking and Delivery Software",
       "desc": "The only software you'll need to run your courier business - we got you covered from your bookings to managing your senders, agents, riders and cash.",
-      "og": {
-        "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
-      },
-      "twitter": {
-        "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg",
-        "card": "optional: magiging summary card ito kapag may og:title, og:desc and og:type"
-      }
+      "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
+    }
+  },
+  {
+    "title": "Privacy Policy",
+    "slug": "privacy-policy",
+    "meta": {
+      "title": "Privacy Policy",
+      "desc": "The only software you'll need to run your courier business - we got you covered from your bookings to managing your senders, agents, riders and cash.",
+      "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
     }
   }
 ]

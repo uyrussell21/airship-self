@@ -6,10 +6,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Link from "next/link"
 import sitemap from "@lib/sitemap.json"
 
-const footerPages = ["Home", "Pricing", "For Senders", "Privacy Policy", "Blog", "Contact Us"]
+const navOrder = ["", "pricing", "privacy-policy", "blog", "about"]
+const footerNav = navOrder.map(nav => (
+  sitemap.find(({slug}) => slug === nav)
+))
 
-const parentSlug = sitemap[0]["slug"]
-const footerFeatures = sitemap[0]["subNavs"]
+const featuresSlug = "features"
+const footerFeatures = sitemap.find(({slug}) => slug === featuresSlug)["subNavs"]
 
 const FooterNav = () => {
   return (
@@ -29,12 +32,11 @@ const FooterNav = () => {
         <nav>
           <h2>Pages</h2>
           <ul>
-            {footerPages.map(title => {
-              const href = title.toLowerCase().split(" ").join("-")
+            {footerNav.map(({title, slug}) => {
 
               return (
-                <li key={href}>
-                  <Link href={"/" + (title === "Home" ? "" : href)}>
+                <li key={slug}>
+                  <Link href={"/" + slug}>
                     <a>{title}</a>
                   </Link>
                 </li>
@@ -50,7 +52,7 @@ const FooterNav = () => {
 
               return (
                 <li key={slug}>
-                  <Link href={`/${parentSlug}/${slug}`}>
+                  <Link href={`/${featuresSlug}/${slug}`}>
                     <a>{title}</a>
                   </Link>
                 </li>

@@ -7,6 +7,11 @@ import { useEffect, useState } from "react"
 import sitemap from "@lib/sitemap.json"
 import { useRouter } from "next/router"
 
+const navOrder = ["features", "pricing", "blog", "about"]
+const headerNav = navOrder.map(nav => (
+  sitemap.find(({slug}) => nav === slug)
+))
+
 const TopBar = () => (
   <address>
     <div className="container-sm">
@@ -67,7 +72,7 @@ const NavBar = () => {
       target="main-nav"/>
 
       <ul id="main-nav">
-        {sitemap.map(({title, slug, subNavs}) => {
+        {headerNav.map(({title, slug, subNavs}) => {
           const navItem = !subNavs
           ? <Link href={`/${slug}`}>
               <a>{title}</a>
