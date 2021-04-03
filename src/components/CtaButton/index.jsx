@@ -1,10 +1,10 @@
 import Link from "next/link"
 
-const CtaButton = ({ className, children }) => {
+const CtaButton = ({ className, children, isOverview }) => {
   let target = "_blank"
   let rel = "_blank"
   let href = "https://www.calendly.com/airshiplogistics"
-  if (children) {
+  if (isOverview) {
     target = undefined
     rel = undefined
     href = "/features/feature-overview"

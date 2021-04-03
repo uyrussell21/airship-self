@@ -10,7 +10,7 @@ const CtaSection = ({ hideFeatureBtn }) => (
       <li className="demo-btn"><CtaButton className="main blue" /></li>
       {(!hideFeatureBtn) &&
         <li className="demo-btn-alt">
-          <CtaButton className="alt blue">
+          <CtaButton className="alt blue" isOverview>
             See all Features <FontAwesomeIcon icon={faArrowRight} />
           </CtaButton>
         </li>
