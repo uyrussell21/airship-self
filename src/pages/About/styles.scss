@@ -46,7 +46,6 @@
 
 // Our * sections
 #about .our {
-  padding: 4em 0;
   
   @include breakpoints(lg) {
     > div {

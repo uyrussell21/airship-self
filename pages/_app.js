@@ -1,10 +1,14 @@
-import PageHeader from "@components/PageHeader";
 import React from "react";
 import Head from "next/head";
+import PageHeader from "@components/PageHeader";
 import PageFooter from "@components/PageFooter";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import "../src/styles/global.scss";
+
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css' // Import the CSS
+config.autoAddCss = false
 
 // Router.events.on('routeChangeStart', (url) => {
 //   console.log(`Loading: ${url}`)
@@ -21,7 +25,7 @@ const App = ({ Component, pageProps }) => {
         <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans:ital,wght@0,400;0,600;0,800;1,400;1,700&family=Roboto&family=Poppins:wght@700&display=swap" rel="stylesheet" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Airship Web</title>
+        <title>Airship Logistics</title>
       </Head>
 
       <PageHeader />

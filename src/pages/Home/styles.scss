@@ -1,4 +1,8 @@
 // Hero
+#home section:first-of-type {
+  padding: 0;
+}
+
 #home .hero {
   
   p {
@@ -40,7 +44,6 @@
 
 // WhyAirship
 #home .why-body {
-  padding-top: 5em;
   
   h2 {
     max-width: 600px;
