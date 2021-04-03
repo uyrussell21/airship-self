@@ -151,7 +151,7 @@ const faqContent = [
   {
     head: "I'm new to the courier business. Where do I start?",
     content: [
-      "Airship facilitates what we designed as the Airship Process which is an accumulation of all of the best practices to ensure the integrity of your business. We'll equip you with everything you need to run your business, so you can easily start from day 1. Don't worry -- we're here to hold your hand every step of the way."
+      {__html: "Airship facilitates what we designed as the Airship Process which is an accumulation of all of the best practices to ensure the integrity of your business. We'll equip you with everything you need to run your business, so you can easily start from day 1. Don't worry&mdash;we're here to hold your hand every step of the way."}
     ]
   }
 ]
