@@ -109,13 +109,10 @@ nav.active #hamburger .bar {
 // Nav List
 #main-nav {
   max-width: 1440px;
-  display: flex;
   background: #fff;
   color: #000;
+  display: flex;
   flex-flow: column;
-  align-items: center;
-  
-  padding: 0 12px;
   visibility: hidden;
   opacity: 0;
   position: absolute;
@@ -127,7 +124,22 @@ nav.active #hamburger .bar {
   transition: opacity 0.2s;
 
   > li {
-    padding: 12px 0;
+    + li {
+      border-top: 1px solid var(--quote-border);
+    }
+
+    &.cta {
+      padding: 12px;
+    }
+
+    > a:not(.cta-btn) {
+      padding: 12px;
+      display: block;
+
+      &:hover {
+        background-color: var(--quote-border);
+      }
+    }
   }
 }
 
@@ -140,6 +152,7 @@ nav.active #main-nav {
 @include breakpoints(lg) {
   #main-nav {
     flex-flow: row;
+    align-items: center;
     position: static;
     background: transparent;
     width: auto;
@@ -149,8 +162,15 @@ nav.active #main-nav {
     opacity: 1;
 
     > li {
-      padding: 0;
-      margin: 0 20px;
+      margin: 0 0.5em;
+      
+      + li {
+        border: unset;
+      }
+
+      &.cta {
+        padding: 0;
+      }
 
       &:last-of-type {
         margin-right: 0;

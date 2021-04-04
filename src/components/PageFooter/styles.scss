@@ -31,6 +31,10 @@ footer {
     display: flex;
     flex-direction: column;
     max-width: 850px;
+
+    nav a:hover {
+      text-decoration: underline;
+    }
   }
 
   nav, .contact {

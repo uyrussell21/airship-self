@@ -73,22 +73,23 @@ const NavBar = () => {
 
       <ul id="main-nav">
         {headerNav.map(({title, slug, subNavs}) => {
-          const navItem = !subNavs
+          const isOpen = (slug === currentNavOpen) ? true : false
+          const navItem = (!subNavs
           ? <Link href={`/${slug}`}>
               <a>{title}</a>
             </Link>
           : <NavDropdown
-              {...{title, slug, subNavs, toggleSubNav, currentNavOpen}}
+              {...{title, slug, subNavs, toggleSubNav, isOpen}}
             />
-
+          )
           return (
-            <li key={slug}>
+            <li className={isOpen ? "active" : undefined} key={slug}>
               {navItem}
             </li>
           )
         })}
 
-        <li key="cta-btn">
+        <li className="cta" key="cta-btn">
           <CtaButton className="main red" />
         </li>
         

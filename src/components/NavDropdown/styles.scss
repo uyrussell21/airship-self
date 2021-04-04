@@ -1,34 +1,39 @@
 button.sub-nav-btn {
-  padding: 0 5px;
+  padding: 12px;
+  width: 100%;
   
   svg {
     margin-left: 10px;
     transition: all 0.2s;
   }
+
+  &:hover {
+    background-color: var(--quote-border);
+  }
 }
 
 ul.sub-nav {
+  --dotted-border: 2px dashed var(--quote-border);
   height: 0;
   overflow: hidden;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
+  flex-direction: column;
   background: #fff;
-  border-bottom: solid 2px var(--quote-border);
+  border-top: solid 1px var(--quote-border);
   text-align: left;
   z-index: 9;
   transition: height 0.2s ease-out;
 
   li:first-of-type {
-    width: 100%;
-    border-bottom: 2px dashed var(--quote-border);
-    display: flex;
-    justify-content: center;
-    
-    a {
-      max-width: 500px;
-      grid-template-columns: clamp(35px, 10vw, 120px) 1fr;
+    border-bottom: var(--dotted-border);
+
+    span {
+      color: var(--red-btn);
+      font-weight: 600;
+    }
+
+    svg {
+      transition: all 0.2s;
     }
   }
 
@@ -36,8 +41,7 @@ ul.sub-nav {
     display: grid;
     grid-template-columns: clamp(35px, 10vw, 75px) 1fr;
     grid-gap: 10px;
-    padding: 5px 20px;
-    
+    padding: 12px;
     align-items: center;
 
     &:hover, &:focus {
@@ -49,6 +53,10 @@ ul.sub-nav {
 
       p:first-of-type {
         color: var(--red-btn);
+      }
+
+      svg {
+        transform: translateX(0.5em);
       }
     }
   }
@@ -73,23 +81,50 @@ ul.sub-nav {
 
   @include breakpoints(lg) {
     position: absolute;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     top: 100%;
     left: 0;
     right: 0;
     box-shadow: var(--hover-shadow);
 
-    a {
-      margin: 20px;
-      max-width: 350px;
+    li:first-of-type {
+      grid-row-start: 1;
+      grid-row-end: -1;
+      border-bottom: unset;
+      border-right: var(--dotted-border);
+
+      a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        img {
+          width: 70%
+        }
+      }
+    }
+
+    li {
+      border-bottom: 1px solid var(--quote-border);
+
+      a {
+        height: 100%;
+      }
     }
   }
 }
 
 // Toggling Sub Nav Styles
-button.sub-nav-btn.active svg {
-  transform: rotate(-180deg);
+#main-nav li.active {
+  background-color: var(--quote-border);
+
+  > button.sub-nav-btn svg {
+    transform: rotate(-180deg);
+  }
 }
+
 
 ul.sub-nav.closed {
   display: none;
