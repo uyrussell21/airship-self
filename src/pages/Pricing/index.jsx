@@ -1,6 +1,7 @@
 import Checklist from "@components/Checklist"
 import CtaButton from "@components/CtaButton"
 import CtaSection from "@components/CtaSection"
+import { Fragment } from "react"
 
 const pricingContent = [
   {
@@ -161,7 +162,7 @@ const PricingCard = ({ head, lead, price, list }) => {
   if (price) {
     cta = (
       <>
-        <p class="price"><span>Php {price}</span> / mo</p>
+        <p className="price"><span>Php {price}</span> / mo</p>
         <p>includes 3,500 packages</p>
         <p>+ Php 300 / 100 packages in excess</p>
       </>
@@ -188,10 +189,10 @@ const PricingCard = ({ head, lead, price, list }) => {
         {list.map(({head, content}) => {
           const list = content.map(str => ({desc: str}))
           return (
-            <>
+            <Fragment key={head}>
               <h4>{head}</h4>
               <Checklist {...{list}} />
-            </>
+            </Fragment>
           )
         })}
       </div>
@@ -206,7 +207,7 @@ const PricingSection = () => (
     
     <div className="pricing-cards">
       {pricingContent.map(({head, lead, price, list}) => (
-        <PricingCard {...{head, lead, price, list}} />
+        <PricingCard key={head} {...{head, lead, price, list}} />
       ))}
     </div>
   </section>
@@ -218,7 +219,7 @@ const YouGet = () => (
       <h2>That's not all, with Airship you get</h2>
       <div className="benefits">
         {youGetContent.map(({head, lead, slug}) => (
-          <div>
+          <div key={head}>
             <img src={`/static/pricing/pricing-${slug}.png`} alt={`${slug} graphic`} />
             <h3>{head}</h3>
             <p>{lead}</p>
@@ -233,13 +234,13 @@ const Faq = () => (
   <section className="faq wavy-border">
     <div className="container-sm">
       <h2>Frequently Asked Questions</h2>
-      <div class="faq-body">
+      <div className="faq-body">
         {faqContent.map(({head, content}) => (
-          <div>
+          <div key={head}>
             <h3>{head}</h3>
-            {content.map(item => {
-              if (item["__html"]) return <p dangerouslySetInnerHTML={item} />
-              return <p>{item}</p>
+            {content.map((item,i) => {
+              if (item["__html"]) return <p key={i} dangerouslySetInnerHTML={item} />
+              return <p key={i}>{item}</p>
             })}
           </div>
         ))}

@@ -9,8 +9,7 @@
         "desc": "Grow your courier business by making the shift to Airship",
         "meta": {
           "title": "Courier Tracking and Delivery Software",
-          "desc": "The only software you'll need to run your courier business - we got you covered from your bookings to managing your senders, agents, riders and cash.",
-          "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
+          "desc": "The only software you'll need to run your courier business - we got you covered from your bookings to managing your senders, agents, riders and cash."
         }
       },
       {
@@ -18,8 +17,7 @@
         "slug": "track-and-trace",
         "desc": "Track your packages every step of the way, in real-time",
         "meta": {
-          "desc": "Track packages real-time as your riders and agents update the system through mobile app and web app. Airship covers your workflow from first mile to last mile.",
-          "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
+          "desc": "Track packages real-time as your riders and agents update the system through mobile app and web app. Airship covers your workflow from first mile to last mile."
         }
       },
       {
@@ -28,8 +26,7 @@
         "desc": "Let your customers book and track on their own",
         "meta": {
           "title": "Branded Booking Site for Senders",
-          "desc": "Airship offers a booking system where your senders can easily book pickups and deliveries, bulk upload their packages and track packages in real time.",
-          "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
+          "desc": "Airship offers a booking system where your senders can easily book pickups and deliveries, bulk upload their packages and track packages in real time."
         }
       },
       {
@@ -38,8 +35,7 @@
         "desc": "Assign bookings and packages to your riders",
         "meta": {
           "title": "Dispatch System and Proof of Delivery",
-          "desc": "Dispatch your bookings and deliveries easily to your agents and riders, in just a matter of seconds with Airship's dispatch dashboard.",
-          "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
+          "desc": "Dispatch your bookings and deliveries easily to your agents and riders, in just a matter of seconds with Airship's dispatch dashboard."
         }
       },
       {
@@ -48,8 +44,7 @@
         "desc": "Track cash movements on pickups and deliveries",
         "meta": {
           "title": "Cash Management",
-          "desc": "Keep track of all your courier transactions - shipping fees, insurance fees, cash on delivery fees, etc. Offer flexible payment methods to your senders.",
-          "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
+          "desc": "Keep track of all your courier transactions - shipping fees, insurance fees, cash on delivery fees, etc. Offer flexible payment methods to your senders."
         }
       },
       {
@@ -58,8 +53,7 @@
         "desc": "Be flexible with your services and pricing",
         "meta": {
           "title": "Expand your Courier Business",
-          "desc": "Reach your full potential! Airship supports multiple delivery models, and allows you to expand from your single hub to multiple hubs across the nation.",
-          "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
+          "desc": "Reach your full potential! Airship supports multiple delivery models, and allows you to expand from your single hub to multiple hubs across the nation."
         }
       },
       {
@@ -68,8 +62,7 @@
         "desc": "Stay on top of your business with metrics",
         "meta": {
           "title": "Analytics and Reports",
-          "desc": "Monitor your business levers through a single metric dashboard. Export reports and keep track of your top agents and riders, and top senders.",
-          "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
+          "desc": "Monitor your business levers through a single metric dashboard. Export reports and keep track of your top agents and riders, and top senders."
         }
       }
     ]
@@ -79,8 +72,7 @@
     "slug": "pricing",
     "meta": {
       "title": "Pricing - All-in-one Pricing",
-      "desc": "Airship offers a simple pricing that grows with you as you grow. Our basic plan already includes all platforms you need to start running your courier business.",
-      "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
+      "desc": "Airship offers a simple pricing that grows with you as you grow. Our basic plan already includes all platforms you need to start running your courier business."
     }
   },
   {
@@ -88,17 +80,15 @@
     "slug": "blog",
     "meta": {
       "title": "",
-      "desc": "",
-      "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
+      "desc": ""
     }
   },
   {
-    "title": "About Us",
+    "title": "About",
     "slug": "about",
     "meta": {
       "title": "About - Get to Know Us",
-      "desc": "Discover how Airship came about, from its humble beginnings as a web development agency all the way to a software built for couriers.",
-      "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
+      "desc": "Discover how Airship came about, from its humble beginnings as a web development agency all the way to a software built for couriers."
     }
   },
   {
@@ -106,8 +96,7 @@
     "slug": "",
     "meta": {
       "title": "Courier Tracking and Delivery Software",
-      "desc": "The only software you'll need to run your courier business - we got you covered from your bookings to managing your senders, agents, riders and cash.",
-      "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
+      "desc": "The only software you'll need to run your courier business - we got you covered from your bookings to managing your senders, agents, riders and cash."
     }
   },
   {
@@ -115,8 +104,15 @@
     "slug": "privacy-policy",
     "meta": {
       "title": "Privacy Policy",
-      "desc": "The only software you'll need to run your courier business - we got you covered from your bookings to managing your senders, agents, riders and cash.",
-      "img": "https://airship-prod-files.s3.ap-southeast-1.amazonaws.com/public-assets/airship-og-image.jpg"
+      "desc": "The only software you'll need to run your courier business - we got you covered from your bookings to managing your senders, agents, riders and cash."
     }
+  },
+  {
+    "title": "404 - Page Not Found",
+    "slug": "404"
+  },
+  {
+    "title": "500 Error - Something went wrong on our side",
+    "slug": "_error"
   }
 ]
