@@ -28,9 +28,8 @@ const FacebookMessenger = () => (
     <div
       className="fb-customerchat"
       attribution="setup_tool"
-      page_id={`"${FB_PIXEL_ID}"`}
-    >
-    </div>
+      page_id={FB_PIXEL_ID}
+    />
   </>
 )
 
