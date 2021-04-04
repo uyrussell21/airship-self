@@ -54,6 +54,14 @@
 
     a {
       color: var(--red-btn);
+
+      svg {transition: transform 0.3s;}
+
+      &:hover {
+        color: var(--dark-red);
+
+        svg {transform: translateX(0.5em)}
+      }
     }
   }
 }

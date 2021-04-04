@@ -4,16 +4,25 @@ a.cta-btn {
   font-family: 'Roboto', sans-serif;
   font-size: var(--size-body);
   display: inline-block;
+  transition: all 0.3s;
 
   &.main {
     color: #fff;
 
     &.red {
-      background: var(--red-btn);
+      background-color: var(--red-btn);
+      
+      &:hover {
+        background-color: var(--dark-red);
+      }
     }
 
     &.blue {
-      background: var(--blue-btn);
+      background-color: var(--blue-btn);
+
+      &:hover {
+        background-color: var(--bright-blue);
+      }
     }
   }
 
@@ -24,11 +33,32 @@ a.cta-btn {
     &.red {
       color: var(--red-btn);
       border-color: var(--red-btn);
+      
+      &:hover {
+        color: #fff;
+        background-color: var(--red-btn);
+      }
     }
 
     &.blue {
       color: var(--blue-btn);
       border-color: var(--blue-btn);
+      
+      &:hover {
+        color: #fff;
+        border-color: var(--bright-blue);
+        background-color: var(--bright-blue);
+      }
+    }
+  }
+
+  svg {
+    transition: transform 0.3s;
+  }
+
+  &:hover {
+    svg { 
+      transform: translateX(0.5em);
     }
   }
 }

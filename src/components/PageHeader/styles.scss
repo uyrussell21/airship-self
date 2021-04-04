@@ -141,6 +141,10 @@ nav.active #hamburger .bar {
       }
     }
   }
+
+  a, button {
+    transition: all 0.3s;
+  }
 }
 
 nav.active #main-nav {
