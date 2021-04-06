@@ -20,9 +20,9 @@ const content = [
 
 const BookingSystem = () => (
   <FeaturesLayout {...{bodyHead}} hasPaths heroBg="half">
-    <div className="container-sm">
+    <div className="container-sm col-md-10">
       <h2>Your senders don't need to call you for every single, tiny, thing ~ <strong className="blue">All you need is Airship</strong></h2>
-      <ul>
+      <ul className="col-xl-10">
         {content.map(([title, imgSlug]) => (
           <li key={imgSlug}>
             <img src={`/static/booking-system/booking-icons-${imgSlug}.png`} alt={title}/>

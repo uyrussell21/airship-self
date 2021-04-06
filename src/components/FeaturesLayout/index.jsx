@@ -27,7 +27,7 @@ const FeaturesBody = ({ featureBody, currSlug, imgSlug, bodyHead, hasPaths }) =>
   return (
     <section className="features-body">
       {bodyHead && <h2>{bodyHead}</h2>}
-      <div className="features-list container-sm">
+      <div className="features-list container-sm col-md-10 col-xl-8">
         {featureBody.map(({head, lead, list}, i) => (
           <Fragment key={i}>
             {hasPaths && 

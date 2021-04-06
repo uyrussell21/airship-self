@@ -18,18 +18,18 @@ const content = [
 ]
 
 const BenefitsItem = ({ title, desc, i }) => (
-  <div>
+  <li>
     <img src={`/static/flexible-pricing/flexible-icons-${i + 1}.png`}
       alt={`flexible pricing benefits graphic ${i + 1}`}
     />
     <h4>{title}</h4>
     <p>{desc}</p>
-  </div>
+  </li>
 )
 
 const FlexiblePricing = () => (
   <FeaturesLayout heroHasCta>
-    <div className="container-sm">
+    <div className="container-sm col-md-10">
       <h2><strong className="blue">Ask what, not how</strong> - don't let the lack of technology limit you</h2>
       <CtaButton className="main red" />
       <ul>

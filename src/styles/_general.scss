@@ -14,12 +14,16 @@
   --wavy-height: min(15vw, 218px);
   --wavy-offset-mult: 1.5;
   --col-gap: 2em;
-  --size-body: min(max(16px, 4vw), 18px);
+  /* --size-body: min(max(16px, 4vw), 18px);
   --size-body-sm: min(max(14px, 3vw), 16px);
   --size-body-md: min(max(16px, 4vw), 20px);
-  --size-body-lg: min(max(18px, 5vw), 22px);
-  --size-h1: min(max(32px, 9vw), 40px);
-  --size-h2: min(max(24px, 7vw), 32px);
+  --size-body-lg: min(max(18px, 5vw), 22px); */
+  --size-body: min(max(14px, 4vw), 16px);
+  --size-body-sm: min(max(12px, 3vw), 14px);
+  --size-body-md: min(max(14px, 3vw), 16px);
+  --size-body-lg: min(max(16px, 4vw), 20px);
+  --size-h1: min(max(28px, 9vw), 36px);
+  --size-h2: min(max(22px, 7vw), 28px);
 }
 
 html {

@@ -10,13 +10,13 @@
     justify-content: center;
     column-gap: 1em;
     row-gap: 1em;
-    max-width: 1440px;
+    max-width: 1140px;
     margin: 0 auto;
     padding: 0 12px;
 
     li {
       text-align: left;
-      max-width: 23em;
+      max-width: 18em;
       background: #fff;
       padding: 1.4em 2.2em;
       border-radius: 10px;
@@ -41,7 +41,7 @@
     h3 {
       font-family: 'Open Sans', sans-serif;
       margin-bottom: 0.5em;
-      font-size: var(--size-body);
+      font-size: var(--size-body-sm);
       font-weight: bold;
       color: var(--bright-blue);
       text-transform: uppercase;
@@ -50,7 +50,7 @@
     p {
       font-family: 'Merriweather', serif;
       margin-bottom: 1em;
-      font-size: var(--size-body-lg);
+      font-size: var(--size-body-sm);
       color: var(--dark-grey);
     }
 

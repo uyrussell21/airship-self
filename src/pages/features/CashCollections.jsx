@@ -14,7 +14,7 @@ const list = content.map(str => ({desc: str}))
 
 const CashCollections = () => (
   <FeaturesLayout heroHasCta>
-    <div className="container-sm">
+    <div className="container-sm col-md-10">
       <img src="/static/cash-collections/cash-benefits.png" alt="" />
       <div>
         <h2>What's <strong>worse</strong> than losing your cash is <strong className="blue">losing someone else's</strong></h2>

@@ -16,10 +16,6 @@
   row-gap: 2em;
   grid-template-columns: 1fr;
 
-  p {
-    color: #000;
-  }
-
   .pricing-card {
     background-color: #fff;
     border-radius: 10px;
@@ -65,18 +61,20 @@
     font-weight: bold;
 
     + p {
-      font-size: var(--size-body);
-      margin-top: 0.5em;
+      font-size: var(--size-body-sm);
+      color: var(--faint-grey);
+      margin-bottom: 2em;
     }
   }
 
   .price {
     span {
       font-size: var(--size-h2);
+      color: #000;
     }
 
     ~ p {
-      font-size: var(--size-body);
+      font-size: var(--size-body-sm);
       margin: 0;
     }
   }
@@ -157,6 +155,7 @@
   h3 {
     text-align: left;
     font-size: var(--size-body-lg);
+    color: var(--bright-blue);
   }
   
   p {
