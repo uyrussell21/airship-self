@@ -140,5 +140,15 @@ footer {
 
 .black-strip {
   background: #010000;
-  height: 50px;
+  padding: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 1em;
+
+  p {
+    font-size: var(--size-body-sm);
+    color: var(--faint-grey);
+    margin: 0;
+  }
 }

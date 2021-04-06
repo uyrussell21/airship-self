@@ -20,7 +20,7 @@ const content = [
 
 const BookingSystem = () => (
   <FeaturesLayout {...{bodyHead}} hasPaths heroBg="half">
-    <div>
+    <div className="container-sm">
       <h2>Your senders don't need to call you for every single, tiny, thing ~ <strong className="blue">All you need is Airship</strong></h2>
       <ul>
         {content.map(([title, imgSlug]) => (

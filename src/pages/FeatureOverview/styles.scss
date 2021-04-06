@@ -1,13 +1,25 @@
 #overview .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   img {
-    width: max(50%, 500px);
+    width: max(40%, 400px);
+  }
+
+  > div {
+    max-width: 27em;
   }
 
   @include breakpoints(lg) {
-    display: flex;
     text-align: left;
-    align-items: center;
-    column-gap: 30px;
+    flex-direction: row;
+    column-gap: 4em;
+
+    img {
+      margin: 0;
+    }
 
     p {
       margin-bottom: 0;
@@ -24,8 +36,8 @@
   }
 
   h2 {
-    max-width: 840px;
-    margin: 10px auto 20px;
+    max-width: unset;
+    margin: 0.5em auto 0.7em;
 
     span {
       display: block;
@@ -33,6 +45,6 @@
   }
 
   p {
-    max-width: 550px;
+    max-width: 31em;
   }
 }

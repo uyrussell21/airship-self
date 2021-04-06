@@ -17,7 +17,7 @@ const content = [
   {
     head: "Oversee cash handled by riders and accounting",
     lead: "Airship helps you track how much your senders owe you, how much is with the rider, and how much CODs to remit.",
-    quote: {__html: "&quot;Dati inaabot kami ng 3 oras para lang malaman if nag tally ba yung mga kinolekta ni rider dun sa mga orders namin. Iche-check namin yun isa-isa. Ngayon kailangan nalang namin i-validate sa system. Masaya lahat kasi nakakauwi ng mas maaga tapos nabawasan pa yung instances na may short.&quot;"},
+    quote: {__html: "&quot;Dati inaabot kami nang 3 oras para lang malaman if nag-tally ba yung mga kinolekta ni rider dun sa mga orders namin. Iche-check namin yun isa-isa. Ngayon kailangan na lang namin i-validate sa system. <strong>Masaya lahat kasi nakakauwi nang mas maaga tapos nabawasan pa yung instances na may short.</strong>&quot;"},
     cite: "Merly, Mile Express"
   },
   {

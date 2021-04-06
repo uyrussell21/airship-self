@@ -1,13 +1,8 @@
 // General Benefits styles
 .features-benefits {
-  --section-pady: clamp(12px, 3vw, 60px);
-  --border-rad: 15px;
-  --box-shad: 0 2px 8px 8px rgba(0, 0, 0, 0.1);
-  --width-h2-sm: 550px;
-  --width-h2-md: 660px;
-  --width-h2-lg: 820px;
+  --border-rad: 10px;
 
-  padding: 0 var(--section-pady);
+  padding: 0 12px;
   position: relative;
 
   &::before {
@@ -24,11 +19,9 @@
 
   > div {
     background: #fff;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 3em clamp(14px, 3vw, 60px);
+    padding: 3em 14px;
     border-radius: var(--border-rad);
-    box-shadow: var(--box-shad);
+    box-shadow: var(--card-shadow);
   }
 
   img + div h2 {
@@ -36,7 +29,8 @@
   }
 
   h2 {
-    max-width: var(--width-h2-lg);
+    max-width: 18em;
+    padding: 0;
   }
   
   strong.blue {
@@ -46,8 +40,8 @@
   h2 + p {
     font-size: var(--size-body-lg);
     color: var(--light-grey);
-    max-width: 500px;
-    margin: 0.5em auto 1.5em;
+    max-width: 22em;
+    margin-bottom: 1.5em;
   }
 
   ul {
@@ -62,7 +56,6 @@
 
     li {
       width: fit-content;
-      font-size: var(--size-body-lg);
     }
   }
 
@@ -80,10 +73,6 @@
 
 // Track and Trace
 #track-and-trace .features-benefits {
-  h2 {
-    font-size: var(--size-h1);
-  }
-
   @include breakpoints(lg) {
     ul.checklist {
       grid-template-rows: repeat(4, 1fr);
@@ -93,6 +82,10 @@
 
 // Booking System
 #booking-system .features-benefits {
+  h2 {
+    max-width: 22em;
+  }
+
   ul {
     display: flex;
     flex-wrap: wrap;
@@ -103,10 +96,14 @@
     li {
       max-width: 170px;
       width: 40%;
+
+      p {
+        margin-top: 0.5em;
+      }
     }
 
     img {
-      max-width: 60%;
+      max-width: 50%;
     }
   }
 }
@@ -121,28 +118,29 @@
     background-image: url("/static/dispatch-riders/dispatch-map-bg.png");
     background-size: cover;
     background-position: left;
-    padding: 5em var(--section-pady) 3em;
+    padding: 5em 12px 3em;
 
     div {
       margin: 0 auto;
-      max-width: 620px;
-      padding: 3em clamp(1em, 5vw, 3em) 2em;
-      border-radius: 10px;
+      max-width: 34em;
+      padding: 3em 14px 2em;
+      border-radius: var(--border-rad);
       box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.2);
       background: #fff;
     }
   }
 
   @include breakpoints(lg) {
-    padding: 0 var(--section-pady);
-
     > div {
       border-radius: var(--border-rad);
-      box-shadow: var(--box-shad);
+      box-shadow: var(--card-shadow);
+      padding-left: 3em;
 
       div {
         margin: 0;
         text-align: left;
+        padding-left: 3em;
+        padding-right: 3em;
       }
 
       p {
@@ -154,23 +152,20 @@
 
 // Cash Collections
 #cash-collections .features-benefits > div {
-  img {
-    width: 50%;
-  }
-
-  h2 {
-    max-width: var(--width-h2-sm);
-  }
 
   @include breakpoints(lg) {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     text-align: left;
+    column-gap: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
 
     img {
-      margin-left: 2em;
+      margin: 0;
+      max-width: 50%;
     }
 
     h2 {
@@ -187,8 +182,8 @@
 
 // Flexible Pricing
 #flexible-pricing .features-benefits {
-  h2 {
-    max-width: var(--width-h2-md);
+  .cta-btn {
+    margin-top: 0;
   }
 
   ul {
@@ -197,7 +192,7 @@
     > div {
       margin: 2em;
       display: grid;
-      grid-template-rows: 170px 1fr 2fr;
+      grid-template-rows: 10em 1fr 3fr;
     }
     
     h4 {
@@ -222,10 +217,6 @@
     max-width: 50%;
   }
 
-  h2 {
-    max-width: var(--width-h2-sm);
-  }
-
   ul.checklist {
     grid-template-rows: repeat(5, 1fr);
   }
@@ -233,20 +224,16 @@
   @include breakpoints(lg) {
     text-align: left;
 
-    img {
-      margin-left: 2em;
-      margin-right: 0;
-    }
-
     > div {
       display: flex;
       flex-direction: row-reverse;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
+      column-gap: 2em;
     }
 
-    h2 {
-      margin: 0;
+    img, h2 {
+      margin: 0; 
     }
 
     ul.checklist {

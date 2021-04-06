@@ -19,7 +19,7 @@ const list = content.map(str => ({desc: str}))
 
 const AnalyticsAndReports = () => (
   <FeaturesLayout heroHasCta heroBg="half">
-    <div>
+    <div className="container-sm">
       <img src="/static/analytics-and-reports/analytics-benefits.png"
         alt="analytics and reports benefits graphic"
       />

@@ -5,6 +5,7 @@ import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Link from "next/link"
 import sitemap from "@lib/sitemap.json"
+import { useEffect, useState } from "react"
 
 const navOrder = ["", "pricing", "privacy-policy", "blog", "about"]
 const footerNav = navOrder.map(nav => (
@@ -89,12 +90,19 @@ const FooterNav = () => {
   )
 }
 
+const CopyrightFooter = () => (
+  <div className="black-strip">
+    <p>Airship Logistics Solutions</p>
+    <p>©️ {new Date().getUTCFullYear()} Created by BotBros</p>
+  </div>
+)
+
 const PageFooter = () => (
   <>
     <footer>
       <FooterNav />
     </footer>
-    <div className="black-strip" />
+    <CopyrightFooter />
   </>
 )
 

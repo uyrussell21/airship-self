@@ -1,5 +1,6 @@
 // Hero
 .features .hero {
+  --long-h1: 15em;
   position: relative;
 
   &.hero-bg-half::after {
@@ -16,14 +17,14 @@
   &.hero-bg-edge {
     padding-bottom: 0;
 
-    &+ section {
+    + section {
       padding-top: 5em;
     }
   }
 
-  h1, p {
-    max-width: 650px;
-  }
+  h1 {max-width: 13em;}
+
+  p {max-width: 28em;}
 
   img {
     margin-top: 3em;
@@ -42,8 +43,7 @@
   background: white;
 
   h2 {
-    padding: 0 12px;
-    margin-bottom: 1em;
+    max-width: unset;
   }
 
   .pathImg {
@@ -59,7 +59,7 @@
 
 .features .body-list-item {
   ul {
-    max-width: 450px;
+    max-width: 25em;
     margin: 0 auto;
 
     li {
@@ -75,11 +75,19 @@
 
   @include breakpoints(lg) {
     &:nth-of-type(2n+1) {
-      flex-direction: row-reverse;
+      img {
+        grid-column: 2;
+      }
     }
     
     ul {
       margin: 0;
     }
+  }
+}
+
+#dispatch-riders, #cash-collections {
+  h1 {
+    max-width: var(--long-h1);
   }
 }

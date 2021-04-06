@@ -6,18 +6,20 @@
   --quote-border: #ecedee;
   --bg-logos: rgba(133, 152, 189, 0.1);
   --red-btn: #fe004b;
-  --dark-red: #99002e;
+  --dark-red: #7f0026;
   --blue-btn: #8598bd;
   --bright-blue: #017ade;
   --hover-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.25);
+  --card-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.2);
   --wavy-height: min(15vw, 218px);
   --wavy-offset-mult: 1.5;
-  --size-body: clamp(14px, 4vw, 18px);
-  --size-body-sm: clamp(12px, 3vw, 16px);
-  --size-body-md: clamp(16px, 4vw, 22px);
-  --size-body-lg: clamp(18px, 5vw, 24px);
-  --size-h1: clamp(36px, 9vw, 48px);
-  --size-h2: clamp(24px, 7vw, 36px);
+  --col-gap: 2em;
+  --size-body: min(max(16px, 4vw), 18px);
+  --size-body-sm: min(max(14px, 3vw), 16px);
+  --size-body-md: min(max(16px, 4vw), 20px);
+  --size-body-lg: min(max(18px, 5vw), 22px);
+  --size-h1: min(max(32px, 9vw), 40px);
+  --size-h2: min(max(24px, 7vw), 32px);
 }
 
 html {
@@ -71,6 +73,7 @@ button {
 
 img {
   max-width: 100%;
+  height: auto;
   margin: 0 auto;
   display: block;
 }

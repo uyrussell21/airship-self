@@ -9,15 +9,10 @@ header address {
     flex-wrap: wrap;
     justify-content: center;
     padding: 12px;
+    column-gap: 1.2em;
 
-    > div {
-      &:not(:last-of-type) {
-        margin-right: 20px;
-      }
-
-      a {
-        margin-left: 5px;
-      }
+    > div a {
+      margin-left: 5px;
     }
 
     @include breakpoints(md) {
@@ -34,6 +29,7 @@ header nav {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  font-size: var(--size-body-sm);
 }
 
 // Hamburger Icon

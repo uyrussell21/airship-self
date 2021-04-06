@@ -16,6 +16,19 @@
 
 section {
   padding: 4em 0;
+
+  > h2 {
+    padding: 0 12px;
+  }
+
+  h2 {
+    max-width: 17em;
+    margin-bottom: 1em;
+
+    + p {
+      margin-top: -1em;
+    }
+  }
 }
 
 .wavy-border {

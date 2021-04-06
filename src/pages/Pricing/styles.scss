@@ -1,11 +1,13 @@
 #pricing {
-  h1, p {
-    max-width: 650px;
+  h1 {
+    max-width: 14em;
   }
 
   h1 + p {
+    max-width: 26em;
     margin-top: 1em;
     margin-bottom: 3em;
+    font-size: var(--size-body-md);
   }
 }
 
@@ -21,10 +23,11 @@
   .pricing-card {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: var(--card-shadow);
     width: 100%;
-    max-width: 450px;
+    max-width: 21em;
     margin: 0 auto;
+    padding: 1.5em 0 1.5em;
 
     > div {
       padding: 1.5em;
@@ -102,16 +105,18 @@
 
   h2 {
     margin-bottom: 2em;
+    max-width: unset;
   }
 
   .benefits {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     row-gap: 3em;
 
     > div {
-      max-width: 380px;
+      max-width: 20em;
     }
   }
 
@@ -162,7 +167,7 @@
   @include breakpoints(lg) {
     .faq-body {
       column-count: 2;
-      column-gap: 2em;
+      column-gap: 3em;
       
       > div {
         page-break-inside: avoid;

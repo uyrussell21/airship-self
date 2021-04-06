@@ -29,7 +29,7 @@ const BenefitsItem = ({ title, desc, i }) => (
 
 const FlexiblePricing = () => (
   <FeaturesLayout heroHasCta>
-    <div>
+    <div className="container-sm">
       <h2><strong className="blue">Ask what, not how</strong> - don't let the lack of technology limit you</h2>
       <CtaButton className="main red" />
       <ul>

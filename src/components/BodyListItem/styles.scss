@@ -1,41 +1,46 @@
 .body-list-item {
-  margin: 5em 0;
 
-  &:first-of-type {margin-top: 0}
-  &:last-of-type {margin-bottom: 0}
+  + .body-list-item {
+    margin-top: 5em;
+  }
 
   img {
-    width: max(40%, 400px);
-    margin-bottom: 1em;
+    max-width: 90%;
   }
 
   h3 {
-    max-width: 480px;
+    max-width: 17em;
+    margin-top: 1em;
   }
 
   p {
-    max-width: 550px;
+    max-width: 30em;
     margin: 1em auto 1.5em;
   }
 
   @include breakpoints(lg) {
     text-align: left;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
     align-items: center;
-    margin: 3em 0;
+    column-gap: 3em;
+    grid-auto-flow: dense;
 
-    img {
-      margin: 0 2em;
+    + .body-list-item {
+      margin-top: 3em;
     }
 
-    h3 {
+    img, h3 {
       margin: 0;
+    }
+
+    > div {
+      justify-self: start;
     }
 
     p {
       margin-left: 0;
-      margin-right: 0;
     }
   }
 }

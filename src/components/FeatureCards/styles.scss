@@ -1,44 +1,46 @@
 .features-cards {
-  padding: 4em 0;
 
-  h2 {
-    margin-bottom: 2em;
-    padding: 0 12px;
-
-    &.overview {
-      max-width: 615px;
-    }
+  h2:not(.overview) {
+    max-width: unset;
   }
 
   ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    column-gap: 1em;
+    row-gap: 1em;
     max-width: 1440px;
     margin: 0 auto;
+    padding: 0 12px;
 
     li {
       text-align: left;
-      max-width: 420px;
-      margin: 0.8em;
+      max-width: 23em;
       background: #fff;
       padding: 1.4em 2.2em;
       border-radius: 10px;
-      box-shadow: 2px 2px 8px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: var(--card-shadow);
 
       &.active {
-        h3 { color: var(--blue-btn); }
+        h3 {color: var(--blue-btn);}
+
+        p {margin-bottom: 2em;}
       }
     }
 
     img {
       width: 30%;
       margin: 0;
+
+      + h3 {
+        margin-top: 1em;
+      }
     }
 
     h3 {
       font-family: 'Open Sans', sans-serif;
-      margin: 20px 0 10px;
+      margin-bottom: 0.5em;
       font-size: var(--size-body);
       font-weight: bold;
       color: var(--bright-blue);
