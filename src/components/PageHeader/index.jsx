@@ -15,7 +15,8 @@ const headerNav = navOrder.map(nav => (
 const TopBar = () => (
   <address>
     <div className="container-sm">
-      <ContactPhone />
+      <ContactPhone num="917-537-8250" />
+      <ContactPhone num="919-073-1889" />
       <ContactEmail />
     </div>
   </address>

@@ -1,10 +1,10 @@
 import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-const ContactPhone = () => (
-  <div>
+const ContactPhone = ({num}) => (
+  <div className="c-phone">
     <FontAwesomeIcon icon={faPhoneAlt} />
-    <a href="tel:0917-537-8250">+(63) 917-537-8250</a>
+    <a href={`tel:+63${num}`}>+(63) {num}</a>
   </div>
 )
 
