@@ -17,13 +17,13 @@ const content = [
   {
     head: "Oversee cash handled by riders and accounting",
     lead: "Airship helps you track how much your senders owe you, how much is with the rider, and how much CODs to remit.",
-    quote: {__html: "&quot;Dati inaabot kami nang 3 oras para lang malaman if nag-tally ba yung mga kinolekta ni rider dun sa mga orders namin. Iche-check namin yun isa-isa. Ngayon kailangan na lang namin i-validate sa system. <strong>Masaya lahat kasi nakakauwi nang mas maaga tapos nabawasan pa yung instances na may short.</strong>&quot;"},
+    quote: {__html: "&quot;We used to spend 3 hours just to tally our riders' collections. We would check it one by one. Now we just need to validate it in the system. <strong>Everyone's happy because we can go home earlier and there are fewer instances we're short.</strong>&quot;"},
     cite: "Merly, Mile Express"
   },
   {
     head: "Work together with third-party couriers (3PL)",
     lead: "Forward packages to partners for faster and more efficient deliveries. Airship makes it easier for you and your senders to continue tracking packages with your 3PL partners' websites.",
-    quote: {__html: "&quot;Marami talaga kaming packages per day that is why essential ang partners namin to help deliver the goods on time. This feature <strong>helps us track kung ano yung mga napasa na namin na packages</strong> and at the same time track yung status ng packages.&quot;"},
+    quote: {__html: "&quot;We really have a lot of packages per day that is why it's essential for our partners to help deliver the goods on time. This feature <strong>helps us track which packages get forwarded</strong> and at the same time track the status of our packages.&quot;"},
     cite: "Kurt, Zip Courier"
   }
 ]
@@ -31,9 +31,13 @@ const content = [
 const Hero = () => (
   <section>
     <div className="hero container-sm">
-      <h1>Software built for Couriers</h1>
-      <p>Airship is an end-to-end, ready-to-use software, that offers all the needed tech components to run your courier business</p>
-      <img src="/static/home/home-hero.png" alt="Graphical overview of Airship" />
+      <div className="row justify-content-center">
+        <div className="col-md-8">
+          <h1>Software built for Couriers</h1>
+          <p>Airship is an end-to-end, ready-to-use software, that offers all the needed tech components to run your courier business</p>
+        </div>
+        <img className="col-md-10 col-xl-8" src="/static/home/home-hero.png" alt="Graphical overview of Airship" />
+      </div>
     </div>
 
     <div className="hero-logos">
@@ -65,7 +69,7 @@ const WhyAirship = () => (
       <img src="/static/home/home-journey-sm.png" alt="Path showing different stages of Airship" />
     </picture>
 
-    <div className="why-list container-sm">
+    <div className="why-list container-sm col-md-10 col-xl-8">
       {content.map(({ head, lead, quote, cite}, i) => (
         <WhyAirshipItem {...{i, head, lead, quote, cite}} key={i} />
       ))}
