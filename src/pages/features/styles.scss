@@ -38,9 +38,9 @@
   }
 
   h2 + p {
-    font-size: var(--size-body-lg);
+    font-size: var(--size-body-md);
     color: var(--light-grey);
-    max-width: 22em;
+    // max-width: 22em;
     margin-bottom: 1.5em;
   }
 
@@ -84,6 +84,7 @@
 #booking-system .features-benefits {
   h2 {
     max-width: 22em;
+    margin: 0.5em auto 2em;
   }
 
   ul {
@@ -91,14 +92,17 @@
     flex-wrap: wrap;
     justify-content: center;
     column-gap: 1em;
-    row-gap: 1.5em;
+    row-gap: 2em;
 
     li {
       max-width: 170px;
-      width: 40%;
+      flex: 25%;
+
+      @include breakpoints(lg) { flex: 15%; }
 
       p {
         margin-top: 0.5em;
+        font-size: var(--size-body-sm);
       }
     }
 
@@ -186,23 +190,35 @@
     margin-top: 0;
   }
 
+  > div {
+    padding: 3em 14px 1em;
+  }
+
   ul {
     margin: 2em 0 0;
 
-    > div {
+    > li {
       margin: 2em;
       display: grid;
-      grid-template-rows: 10em 1fr 3fr;
+      // grid-template-rows: 10em 1fr 1.5fr;
+    }
+
+    img {
+      margin-bottom: 1em;
+      @include breakpoints(md) { margin-bottom: 0; }
+      @include breakpoints(xl) { max-width: 50%; }
     }
     
     h4 {
       font-size: var(--size-body-lg);
       font-weight: bold;
+      margin-bottom: 0.5em;
+      @include breakpoints(md) { margin: 1.5em 0 0.5em; }
     }
 
     p {
       font-size: var(--size-body-sm);
-      max-width: 450px;
+      // max-width: 450px;
     }
 
     @include breakpoints(lg) {

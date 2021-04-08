@@ -17,7 +17,7 @@ const CtaSection = ({ hideFeatureBtn }) => (
       }
     </ul>
 
-    <ul className="platforms">
+    <ul className="platforms col-md-10">
       <li><img src="/static/platform-bs.png" alt="Booking System" /></li>
       <li><img src="/static/platform-bo.png" alt="Back Office" /></li>
       <li><img src="/static/platform-ra.png" alt="Riders App" /></li>

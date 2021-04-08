@@ -35,7 +35,7 @@ const HeroSection = () => (
 
 const OurStory = () => (
   <section className="our story">
-    <div className="container-sm">
+    <div className="container-sm col-md-10 col-xl-8">
       <h2>Our Story</h2>
       <div>
         <h3>Started as BotBros</h3>
@@ -56,7 +56,7 @@ const OurStory = () => (
 
 const OurValues = () => (
   <section className="our values">
-    <div className="container-sm">
+    <div className="container-sm col-md-10 col-xl-8">
       <div>
         <h2>Our Values</h2>
         <img src="/static/about/about-values.png" alt="Our Values graphic"/>
@@ -75,7 +75,7 @@ const OurValues = () => (
 
 const LifeAtAirship = () => (
   <section className="life">
-    <div className="container-sm">
+    <div className="container-sm col-md-10 col-xl-8">
       <h2>Life at Airship</h2>
       
       <img src="/static/about/about-team.png" alt="the Airship crew"/>

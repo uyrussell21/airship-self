@@ -46,8 +46,8 @@ const NavDropdown = ({ title, slug, subNavs, toggleSubNav, isOpen }) => {
                   <div>
                     <p>{subTitle}</p>
                     <p>
-                      {subDesc}.
-                      {i === 0 && <span> Find out more <FontAwesomeIcon icon={faArrowRight} /></span>}
+                      {subDesc}
+                      {/* i === 0 && <span> Find out more <FontAwesomeIcon icon={faArrowRight} /></span> */}
                     </p>
                   </div>
                 </a>

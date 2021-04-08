@@ -158,7 +158,7 @@ const faqContent = [
 ]
 
 const PricingCard = ({ head, lead, price, list }) => {
-  let cta = <CtaButton className="blue alt" >Schedule a Call</CtaButton>
+  let cta = <CtaButton className="blue alt">Schedule a Call</CtaButton>
   if (price) {
     cta = (
       <>
@@ -201,7 +201,7 @@ const PricingCard = ({ head, lead, price, list }) => {
 }
 
 const PricingSection = () => (
-  <section className="container-sm">
+  <section className="container-sm col-md-10 col-xl-8">
     <h1>The power of all platforms for the price of one</h1>
     <p>No matter where you are in your journey as a courier, we have a pricing plan for you.</p>
     
@@ -232,7 +232,7 @@ const YouGet = () => (
 
 const Faq = () => (
   <section className="faq wavy-border">
-    <div className="container-sm">
+    <div className="container-sm col-md-10 col-xl-8">
       <h2>Frequently Asked Questions</h2>
       <div className="faq-body">
         {faqContent.map(({head, content}) => (
