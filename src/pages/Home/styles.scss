@@ -9,7 +9,6 @@
     max-width: 21em;
 
     @include breakpoints(md) {
-      width: 50%;
       margin-bottom: -4em;
     }
   }

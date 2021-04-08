@@ -32,11 +32,11 @@ const Hero = () => (
   <section>
     <div className="hero container-sm">
       <div className="row justify-content-center">
-        <div className="col-md-8">
+        <div className="col-lg-8">
           <h1>Software built for Couriers</h1>
           <p>Airship is an end-to-end, ready-to-use software, that offers all the needed tech components to run your courier business</p>
         </div>
-        <img className="col-md-10 col-xl-8" src="/static/home/home-hero.png" alt="Graphical overview of Airship" />
+        <img className="col-lg-10 col-xl-8" src="/static/home/home-hero.png" alt="Graphical overview of Airship" />
       </div>
     </div>
 
