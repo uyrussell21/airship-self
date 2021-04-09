@@ -107,14 +107,13 @@
   }
 
   .benefits {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 3em;
-
     > div {
       max-width: 20em;
+      margin: 0 auto;
+
+      + div {
+        margin-top: 3em;
+      }
     }
   }
 
@@ -123,16 +122,21 @@
     margin: 1em 0 0.5em
   }
 
-  @include breakpoints(lg) {
+  @include breakpoints(md) {
     .benefits {
-      flex-direction: row;
-      align-items: flex-start;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       column-gap: 2em;
       
       > div {
         display: grid;
-        grid-template-rows: 150px;
+        grid-template-rows: 150px auto 2fr;
         row-gap: 1em;
+        margin-top: 0;
+
+        + div {
+          margin: 0;
+        }
       }
 
       h3 {

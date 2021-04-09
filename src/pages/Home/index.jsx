@@ -31,7 +31,7 @@ const content = [
 const Hero = () => (
   <section>
     <div className="hero container-sm">
-      <div className="row justify-content-center">
+      <div className="row justify-content-center align-items-center">
         <div className="col-lg-8">
           <h1>Software built for Couriers</h1>
           <p>Airship is an end-to-end, ready-to-use software, that offers all the needed tech components to run your courier business</p>

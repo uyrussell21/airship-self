@@ -9,7 +9,10 @@ header address {
     flex-wrap: wrap;
     justify-content: center;
     padding: 12px;
-    column-gap: 1.2em;
+
+    div {
+      margin: 0 0.6em
+    }
 
     > div a {
       margin-left: 5px;

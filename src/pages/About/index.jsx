@@ -80,7 +80,7 @@ const LifeAtAirship = () => (
       
       <img src="/static/about/about-team.png" alt="the Airship crew"/>
 
-      <p>Our growing team is composed of young and dynamic individuals. passionate about our goal to revolutionize the logistics industry. Airship embodies a culture of support and work-life balance to its people, ensuring that everyone is always highly valued.</p>
+      <p>Our growing team is composed of young and dynamic individuals, passionate about our goal to revolutionize the logistics industry. Airship embodies a culture of support and work-life balance to its people, ensuring that everyone is always highly valued.</p>
     </div>
   </section>
 )
